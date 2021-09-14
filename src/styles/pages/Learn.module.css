@@ -1,0 +1,46 @@
+@import "../vars.css";
+
+.cardContent {
+  text-align: center;
+
+  font-size: larger;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--main-hap-blue);
+}
+
+.cardContent * {
+  margin-bottom: 0.8rem;
+}
+
+.cardContentButtons {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+@media (max-width: 2100px) {
+  .cardContentButtons {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cardContent {
+    font-size: smaller;
+  }
+
+  .cardContentButtons {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardContent {
+    font-size: smaller;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../vars.css";
+
+.contactContainer {
+  font-weight: bolder;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  min-height: 30vh;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.contact h2 {
+  color: var(--main-hap-blue);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.formerGuest {
+  color: var(--main-hap-blue);
+
+  text-align: center;
+
+  min-height: 15vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1rem;
+
+  background-color: #dbdbdb;
+}
+
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .formerGuest {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    padding: 0.5rem;
+  }
+}

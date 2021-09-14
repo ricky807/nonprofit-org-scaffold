@@ -1,0 +1,25 @@
+@import "../vars.css";
+
+.cardContent {
+  color: var(--main-hap-blue);
+
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardContentInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .cardContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,88 @@
+@import "../../styles/vars.css";
+
+.section {
+  color: #004477;
+
+  width: 100%;
+
+  font-size: 1.5rem;
+
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionContent {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1em;
+}
+
+.sectionInner {
+  width: 50%;
+}
+
+.sectionContent h2 {
+  color: #3b87cd;
+}
+
+.top {
+  text-align: left;
+}
+
+.bottom {
+  text-align: right;
+}
+
+.programs {
+  text-align: center;
+}
+
+.programs * {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1670px) {
+  .sectionInner {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sectionInner {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    font-size: 1.2rem;
+  }
+
+  .sectionInner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .sectionContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .sectionContentTop {
+    align-items: flex-start;
+  }
+
+  .sectionContentBottom {
+    align-items: flex-end;
+  }
+
+
+}
