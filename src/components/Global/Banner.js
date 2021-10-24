@@ -8,7 +8,6 @@ export default function Banner({
   backgroundColor,
   color,
   children,
-  description,
   backgroundImage,
   textDirection,
   height,
@@ -30,6 +29,9 @@ export default function Banner({
       backgroundColor
     )}, url(${backgroundImage})`,
 
+    backgroundRepeat: "no-repeat",
+
+    backgroundSize: "cover",
     color: translatedColor,
 
     minHeight: height,
@@ -56,9 +58,12 @@ const generateGradiant = (color) => {
     case "lightblue":
       return "linear-gradient(to right bottom, rgba(0, 99, 190, 0.164),  rgba(0, 99, 190, 0.164))";
     case "darkpurple":
-      return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.164),  rgba(71, 45, 91, 0.164))";
+      return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.8),  rgba(71, 45, 91, 0.8))";
+    case 'white':
+      return "linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6))";
+
     case "lightpurple":
-      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.164),  rgba(141, 73, 130, 0.164))";
+      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.8),  rgba(141, 73, 130, 0.8))";
   }
 };
 
