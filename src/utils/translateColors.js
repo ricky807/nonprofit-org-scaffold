@@ -4,12 +4,14 @@ const translateColors = (color) => {
   switch (color) {
     case "darkpurple":
       return pallete.darkpurple;
+    case "lightpurple":
+      return pallete.lightpurple;
+    case "hapblue":
+      return pallete.hapblue;
     case "darkblue":
       return pallete.darkblue;
     case "lightblue":
       return pallete.lightblue;
-    case "lightpurple":
-      return pallete.lightpurple;
     case "yellow":
       return pallete.yellow;
     default:

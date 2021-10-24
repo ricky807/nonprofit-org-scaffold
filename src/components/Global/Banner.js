@@ -9,6 +9,7 @@ export default function Banner({
   color,
   children,
   description,
+  backgroundImage,
   textDirection,
   height,
 }) {
@@ -18,14 +19,28 @@ export default function Banner({
 
   let translatedColor = translateColors(color);
 
+  let normalStyles = {
+    backgroundColor: translatedBackgroundColor,
+    color: translatedColor,
+    minHeight: height,
+  };
+
+  let stylesWithImage = {
+    backgroundImage: `${generateGradiant(
+      backgroundColor
+    )}, url(${backgroundImage})`,
+
+    color: translatedColor,
+
+    minHeight: height,
+  };
+
+  // backgroundImage ? stylesWithImage : normal1Styles
+
   return (
     <div
       className={styles.container}
-      style={{
-        backgroundColor: translatedBackgroundColor,
-        color: translatedColor,
-        minHeight: height,
-      }}
+      style={backgroundImage ? stylesWithImage : normalStyles}
     >
       <div className={`${styles.bannerText} ${bannerTextStartingPosition}`}>
         {children}
@@ -33,6 +48,19 @@ export default function Banner({
     </div>
   );
 }
+
+const generateGradiant = (color) => {
+  switch (color) {
+    case "darkblue":
+      return "linear-gradient(to right bottom, rgba(0, 68, 119, 0.4),  rgba(0, 68, 119, 0.4))";
+    case "lightblue":
+      return "linear-gradient(to right bottom, rgba(0, 99, 190, 0.164),  rgba(0, 99, 190, 0.164))";
+    case "darkpurple":
+      return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.164),  rgba(71, 45, 91, 0.164))";
+    case "lightpurple":
+      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.164),  rgba(141, 73, 130, 0.164))";
+  }
+};
 
 const textDirectionToCss = (textDirection) => {
   switch (textDirection) {

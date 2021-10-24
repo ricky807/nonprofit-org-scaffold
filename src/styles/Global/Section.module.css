@@ -1,7 +1,7 @@
-.genericContainer {
-  width: 100%;
+.container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 1rem;
 }

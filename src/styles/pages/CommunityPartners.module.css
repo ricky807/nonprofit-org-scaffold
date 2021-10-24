@@ -1,0 +1,65 @@
+.partnerContainer {
+  display: flex;
+
+  justify-content: center;
+
+  padding: 1rem;
+
+  align-items: center;
+}
+
+.partnerContainer img {
+  width: 100%;
+
+  height: auto;
+}
+
+.partnerInfoContainer {
+  width: 100%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.partnerInfo {
+  width: 50%;
+}
+
+.partnerInfo * {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1300px) {
+  .partnerInfoContainer {
+    width: 70%;
+  }
+
+  .partnerInfo {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .partnerInfoContainer {
+    width: 90%;
+  }
+
+  .partnerInfo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cardImage {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .partnerInfoContainer {
+    width: 100%;
+  }
+}
