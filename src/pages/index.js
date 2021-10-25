@@ -2,7 +2,7 @@ import * as React from "react";
 
 import * as styles from "../styles/pages/Home.module.css";
 
-import Icon from "../images/hap.webp";
+import Icon from "../images/haplogoonly.webp";
 
 import Button from "../components/Global/Button";
 
@@ -117,9 +117,6 @@ const IndexPage = () => {
           <Button>Learn more2</Button>
         </div>
       </section>
-
-      
-
     </main>
   );
 };
