@@ -10,13 +10,7 @@ import haplogoonly from "../images/haplogoonly.webp";
 
 import Bed from "../images/prevent/bed.webp";
 
-import Button from "react-bootstrap/Button";
-
-import { FaPlusCircle, FaHome } from "react-icons/fa";
-
-import { IoLocationSharp } from "react-icons/io5";
-
-import { MdPeople } from "react-icons/md";
+import { FaHome } from "react-icons/fa";
 
 import { GiPiggyBank } from "react-icons/gi";
 
