@@ -1,0 +1,29 @@
+footer {
+	background-color: var(--main-dark-purple);
+	padding: 5rem;
+}
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.linksContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.linkContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+}
+
+.donateButton {
+	background-color: yellow;
+	padding: 1rem;
+	border-radius: 0.8rem;
+}
