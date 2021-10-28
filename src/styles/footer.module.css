@@ -1,12 +1,17 @@
 footer {
 	background-color: var(--main-dark-purple);
-	padding: 5rem;
+	padding: 3rem 0 1rem;
 }
 .container {
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
 }
 
+button {
+	border: none;
+	outline: none;
+}
+/* UPPER CONTAINER */
 .linksContainer {
 	display: flex;
 	justify-content: space-between;
@@ -16,14 +21,70 @@ footer {
 	display: flex;
 	flex-direction: column;
 }
+.linkContainer h3 {
+	color: var(--main-lightgrey);
+}
 
 .links {
 	display: flex;
 	flex-direction: column;
 }
+.links a {
+	color: var(--main-lightgrey);
+	text-decoration: none;
+}
+.links a:hover {
+	color: #00a0c6;
+	cursor: pointer;
+}
 
 .donateButton {
-	background-color: yellow;
-	padding: 1rem;
-	border-radius: 0.8rem;
+	color: var(--main-dark-purple);
+	background-color: var(--main-gold);
+	padding: 0.5rem 2rem;
+	border-radius: 0.2rem;
+}
+.donateButton:hover {
+	background-color: green;
+}
+
+/* LOWER CONTAINER */
+.legalsContainer {
+	padding: 1rem 0 0;
+}
+
+.legal {
+	display: flex;
+	justify-content: space-between;
+}
+.identity {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.lowerLogo {
+	color: var(--main-lightgrey);
+	width: 40%;
+	padding-bottom: 1rem;
+}
+.copyright {
+	color: var(--main-light-purple);
+	font-size: 0.7rem;
+}
+
+.officeButtonContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.officeButton {
+	color: var(--main-lightgrey);
+	background-color: var(--main-light-purple);
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.2rem;
+	font-size: 0.7rem;
+}
+
+.officeButton:hover {
+	background-color: green;
 }
