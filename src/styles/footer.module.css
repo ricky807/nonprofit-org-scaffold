@@ -1,58 +1,58 @@
 footer {
-	background-color: var(--main-dark-purple);
 	padding: 3rem 0 1rem;
+	background-color: var(--main-dark-purple);
 }
 .container {
-	width: 60%;
 	margin: 0 auto;
+	width: 60%;
 }
-
 button {
 	border: none;
 	outline: none;
 }
+
 /* UPPER CONTAINER */
 .linksContainer {
 	display: flex;
 	justify-content: space-between;
 }
-
 .linkContainer {
 	display: flex;
 	flex-direction: column;
 }
 .linkContainer h3 {
 	color: var(--main-lightgrey);
+	font-size: 1rem;
+	margin-bottom: 1.2rem;
 }
-
 .links {
 	display: flex;
 	flex-direction: column;
 }
 .links a {
 	color: var(--main-lightgrey);
+	font-size: 0.6rem;
+	margin-bottom: 0.4rem;
 	text-decoration: none;
 }
 .links a:hover {
 	color: #00a0c6;
 	cursor: pointer;
 }
-
 .donateButton {
-	color: var(--main-dark-purple);
 	background-color: var(--main-gold);
-	padding: 0.5rem 2rem;
 	border-radius: 0.2rem;
+	color: var(--main-dark-purple);
+	padding: 0.5rem 2rem;
 }
 .donateButton:hover {
-	background-color: green;
+	background-color: var(--main-blue);
 }
 
 /* LOWER CONTAINER */
 .legalsContainer {
 	padding: 1rem 0 0;
 }
-
 .legal {
 	display: flex;
 	justify-content: space-between;
@@ -64,27 +64,25 @@ button {
 }
 .lowerLogo {
 	color: var(--main-lightgrey);
-	width: 40%;
 	padding-bottom: 1rem;
+	width: 40%;
 }
 .copyright {
 	color: var(--main-light-purple);
 	font-size: 0.7rem;
 }
-
 .officeButtonContainer {
+	align-items: center;
 	display: flex;
 	justify-content: center;
 }
-
 .officeButton {
-	color: var(--main-lightgrey);
 	background-color: var(--main-light-purple);
-	padding: 0.2rem 0.5rem;
 	border-radius: 0.2rem;
-	font-size: 0.7rem;
+	color: var(--main-lightgrey);
+	font-size: 0.5rem;
+	padding: 0.7rem 0.5rem;
 }
-
 .officeButton:hover {
-	background-color: green;
+	background-color: var(--main-blue);
 }
