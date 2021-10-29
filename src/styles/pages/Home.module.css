@@ -70,23 +70,18 @@
 }
 
 .sectionC {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	align-items: center;
-	min-height: 30rem;
-	gap: 2rem;
-	padding: 3rem;
-
 	background: linear-gradient(
-			to right bottom,
-			rgba(255, 255, 255, 0.205),
-			rgba(255, 255, 255, 0.219)
-		),
-		url("../../images/home/impact.webp");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+		to right bottom,
+		rgba(255, 255, 255, 0.205),
+		rgba(255, 255, 255, 0.219)
+	);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: center;
+	min-height: 30rem;
+	padding: 3rem;
 }
 
 .circles {
