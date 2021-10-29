@@ -1,342 +1,342 @@
 @import "../vars.css";
 
 .container {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .header {
-  width: 100%;
-  height: 60vh;
+	width: 100%;
+	height: 60vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.712),
-      rgba(255, 255, 255, 0.767)
-    ),
-    url("../../images/hapbackgroundimage.webp");
+	background-image: linear-gradient(
+			to right bottom,
+			rgba(255, 255, 255, 0.712),
+			rgba(255, 255, 255, 0.767)
+		),
+		url("../../images/hapbackgroundimage.webp");
 
-  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 
-  background-position: center;
+	background-position: center;
 }
 
 .header h1 {
-  color: var(--main-hap-blue);
+	color: var(--main-hap-blue);
 }
 
 .headerContent {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
 }
 
 .headerTitle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 3rem;
-  align-items: flex-start;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 3rem;
+	align-items: flex-start;
+	gap: 1rem;
 }
 
 .sectionA {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  min-height: 10rem;
-  flex-direction: column;
-  gap: 2rem;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	min-height: 10rem;
+	flex-direction: column;
+	gap: 2rem;
 
-  color: #0063be;
+	color: #0063be;
 }
 
 .sectionB {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 15rem;
-  gap: 2rem;
-  padding: 3rem;
-  background-color: var(--main-light-blue);
-  color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	min-height: 15rem;
+	gap: 2rem;
+	padding: 3rem;
+	background-color: var(--main-light-blue);
+	color: white;
 }
 
 .sectionC {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 30rem;
-  gap: 2rem;
-  padding: 3rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	min-height: 30rem;
+	gap: 2rem;
+	padding: 3rem;
 
-  background: linear-gradient(
-      to right bottom,
-      rgba(255, 255, 255, 0.205),
-      rgba(255, 255, 255, 0.219)
-    ),
-    url("../../images/home/impact.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+	background: linear-gradient(
+			to right bottom,
+			rgba(255, 255, 255, 0.205),
+			rgba(255, 255, 255, 0.219)
+		),
+		url("../../images/home/impact.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .circles {
-  width: 65%;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .sectionD {
-  min-height: 45vh;
-  background-color: #eff2f5;
+	min-height: 45vh;
+	background-color: #eff2f5;
 
-  padding: 1rem;
+	padding: 1rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .sectionDContent {
-  display: flex;
-  width: 60%;
-  gap: 2rem;
+	display: flex;
+	width: 60%;
+	gap: 2rem;
 }
 
 .sectionDBlurbs {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .sectionDBlurbs h4 {
-  color: var(--main-light-blue);
+	color: var(--main-light-blue);
 }
 
 .sectionE {
-  display: flex;
-  width: 100%;
-  min-height: 40vh;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	width: 100%;
+	min-height: 40vh;
+	justify-content: center;
+	align-items: center;
 
-  padding: 1rem 0 1rem 0;
+	padding: 1rem 0 1rem 0;
 }
 
 .sectionEContent {
-  text-align: center;
+	text-align: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	width: 50%;
 }
 
 .sectionEContent h1 {
-  font-size: 3rem;
+	font-size: 3rem;
 
-  color: var(--main-light-blue);
+	color: var(--main-light-blue);
 }
 
 .circle {
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  background: blue;
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
+	background: blue;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-  padding: 2px;
+	padding: 2px;
 }
 
 .circleContent {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .analytics {
-  text-align: center;
+	text-align: center;
 
-  width: 75%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+	width: 75%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 1rem;
 
-  color: white;
+	color: white;
 }
 
 .analytic {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
 }
 
 .analyticCircle {
-  position: relative;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.39);
+	position: relative;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.39);
 
-  font-size: 2rem;
+	font-size: 2rem;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 
-  flex-direction: column;
+	flex-direction: column;
 
-  padding: 2px;
+	padding: 2px;
 }
 
 .analyticIcon {
-  position: relative;
-  bottom: 20px;
+	position: relative;
+	bottom: 20px;
 }
 
 @media (max-width: 1200px) {
-  .container {
-    font-size: 1.3rem;
-  }
+	.container {
+		font-size: 1.3rem;
+	}
 
-  .circles {
-    width: 100%;
-  }
+	.circles {
+		width: 100%;
+	}
 
-  .circle {
-    height: 28vw;
-    width: 28vw;
-  }
+	.circle {
+		height: 28vw;
+		width: 28vw;
+	}
 
-  .analytics {
-    width: 85%;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-  }
+	.analytics {
+		width: 85%;
+		grid-template-columns: 1fr 1fr;
+		gap: 3rem;
+	}
 
-  .analyticCircle {
-    width: 30vw;
-    height: 30vw;
-  }
+	.analyticCircle {
+		width: 30vw;
+		height: 30vw;
+	}
 
-  .sectionDContent {
-    width: 90%;
-  }
+	.sectionDContent {
+		width: 90%;
+	}
 
-  .sectionEContent {
-    width: 70%;
-  }
+	.sectionEContent {
+		width: 70%;
+	}
 }
 
 @media (max-width: 700px) {
-  .header {
-    height: 70vh;
-  }
+	.header {
+		height: 70vh;
+	}
 
-  .headerContent {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
+	.headerContent {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0;
+	}
 
-  .headerTitle {
-    margin-top: 1rem;
-  }
+	.headerTitle {
+		margin-top: 1rem;
+	}
 
-  .headerTitle h1 {
-    font-size: 1.7rem;
-  }
+	.headerTitle h1 {
+		font-size: 1.7rem;
+	}
 
-  .circles {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
+	.circles {
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
 
-  .circle {
-    width: 60vw;
-    height: 60vw;
-  }
+	.circle {
+		width: 60vw;
+		height: 60vw;
+	}
 
-  .analytics {
-    width: 100%;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+	.analytics {
+		width: 100%;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
 
-  .analytic {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	.analytic {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-  .analyticCircle {
-    width: 60vw;
-    height: 60vw;
-  }
+	.analyticCircle {
+		width: 60vw;
+		height: 60vw;
+	}
 
-  .sectionD {
-    padding: 0.5rem;
-  }
+	.sectionD {
+		padding: 0.5rem;
+	}
 
-  .sectionDContent {
-    flex-direction: column;
-    width: 100%;
-  }
+	.sectionDContent {
+		flex-direction: column;
+		width: 100%;
+	}
 
-  .sectionDBlurbs {
-    width: 100%;
-  }
+	.sectionDBlurbs {
+		width: 100%;
+	}
 
-  .video {
-    height: 200px;
-    width: 100%;
-  }
+	.video {
+		height: 200px;
+		width: 100%;
+	}
 
-  .sectionEContent {
-    width: 90%;
-  }
+	.sectionEContent {
+		width: 90%;
+	}
 }
 
 @media (max-width: 400px) {
-  .container {
-    font-size: 1.2rem;
-  }
+	.container {
+		font-size: 1.2rem;
+	}
 
-  .sectionA {
-    padding: 0.8rem;
-  }
+	.sectionA {
+		padding: 0.8rem;
+	}
 
-  .sectionEContent h1 {
-    font-size: 1.6rem;
-  }
+	.sectionEContent h1 {
+		font-size: 1.6rem;
+	}
 }
 
 @media (max-width: 330px) {
-  .sectionA {
-    padding: 1rem 0 1rem 0;
-  }
+	.sectionA {
+		padding: 1rem 0 1rem 0;
+	}
 }
