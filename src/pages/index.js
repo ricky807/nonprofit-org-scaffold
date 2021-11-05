@@ -48,10 +48,11 @@ const IndexPage = () => {
 					bgImage={ParallaxBackground}
 					bgImageAlt="children"
 					bgImageStyle={{
-						// backgroundPosition: "center",
-						// backgroundRepeat: "no-repeat",
-						// backgroundSize: "cover",
-						height: "100%",
+						backgroundPosition: "center",
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "cover",
+						height: "auto",
+						width: "100%",
 					}}
 					contentClassName={styles.sectionC}
 					strength={500}
