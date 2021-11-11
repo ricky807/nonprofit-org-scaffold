@@ -4,7 +4,7 @@ footer {
 }
 .container {
 	margin: 0 auto;
-	width: 60%;
+	width: 75%;
 }
 button {
 	border: none;
@@ -14,16 +14,17 @@ button {
 /* UPPER CONTAINER */
 .linksContainer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .linkContainer {
+	padding: 0 0.5rem;
 	display: flex;
 	flex-direction: column;
 }
 .linkContainer h3 {
 	color: var(--main-lightgrey);
-	font-size: 1rem;
-	margin-bottom: 1.2rem;
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
 }
 .links {
 	display: flex;
@@ -31,7 +32,7 @@ button {
 }
 .links a {
 	color: var(--main-lightgrey);
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	margin-bottom: 0.4rem;
 	text-decoration: none;
 }
@@ -51,38 +52,106 @@ button {
 
 /* LOWER CONTAINER */
 .legalsContainer {
-	padding: 1rem 0 0;
-}
-.legal {
-	display: flex;
-	justify-content: space-between;
-}
-.identity {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	margin: 1rem 0 0;
+	position: relative;
 }
 .lowerLogo {
 	color: var(--main-lightgrey);
-	padding-bottom: 1rem;
-	width: 40%;
+	width: 22%;
+	margin-bottom: 1.5rem;
+}
+.officeButtonContainer {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.officeButton {
+	background-color: var(--main-light-purple);
+	border-radius: 0.4rem;
+	color: var(--main-lightgrey);
+	font-size: 0.7rem;
+	padding: 1.1rem 0.8rem;
+}
+.officeButton:hover {
+	background-color: var(--main-blue);
 }
 .copyright {
 	color: var(--main-light-purple);
 	font-size: 0.7rem;
+	font-weight: bold;
 }
-.officeButtonContainer {
-	align-items: center;
-	display: flex;
-	justify-content: center;
+
+@media only screen and (max-width: 1500px) {
 }
-.officeButton {
-	background-color: var(--main-light-purple);
-	border-radius: 0.2rem;
-	color: var(--main-lightgrey);
-	font-size: 0.5rem;
-	padding: 0.7rem 0.5rem;
+@media only screen and (max-width: 1281px) {
+	/* big landscape tablets, laptops, and desktops */
 }
-.officeButton:hover {
-	background-color: var(--main-blue);
+@media only screen and (max-width: 1100px) {
+	/* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media only screen and (max-width: 961px) {
+	/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	.container {
+		width: 80%;
+	}
+	.linksContainer {
+		flex-wrap: wrap;
+	}
+	.linkContainer {
+		padding-bottom: 1rem;
+	}
+
+	.linkContainer h3 {
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+	}
+	.links a {
+		font-size: 1rem;
+		margin-bottom: 0.4rem;
+	}
+
+	.lowerLogo {
+		width: 40%;
+		margin: 0;
+	}
+	.officeButtonContainer {
+		position: initial;
+		transform: translateY(0%);
+		padding: 1rem;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.officeButton {
+		font-size: 1.1rem;
+		padding: 1.1rem 2.9rem;
+	}
+	.copyright {
+		font-size: 1.1rem;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 641px) {
+	/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	.linkContainer h3 {
+		font-size: 1.3rem;
+		margin-bottom: 1.3rem;
+	}
+	.links a {
+		font-size: 0.8rem;
+		margin-bottom: 0.3rem;
+	}
+	.officeButton {
+		font-size: 1rem;
+	}
+}
+@media only screen and (max-width: 425px) {
+	.container {
+		width: 90%;
+	}
+	.officeButton {
+		font-size: 1rem;
+		padding: 1.1rem 1.5rem;
+	}
 }

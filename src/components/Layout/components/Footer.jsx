@@ -79,19 +79,14 @@ export default function Footer() {
 					</section>
 
 					<section className={styles.legalsContainer}>
-						<div className={styles.legal}>
-							<div className={styles.identity}>
-								<img src={FPLogo} className={styles.lowerLogo} />
-								<div className={styles.copyright}>
-									&copy; Family Promise 2021. Proudly Made with Wix.com
-								</div>
-							</div>
-
-							<div className={styles.officeButtonContainer}>
-								<button className={styles.officeButton}>
-									Family Promise National Office
-								</button>
-							</div>
+						<img src={FPLogo} className={styles.lowerLogo} />
+						<div className={styles.officeButtonContainer}>
+							<button className={styles.officeButton}>
+								Family Promise National Office
+							</button>
+						</div>
+						<div className={styles.copyright}>
+							&copy; Family Promise 2021. All Rights Reserved.
 						</div>
 					</section>
 				</div>
