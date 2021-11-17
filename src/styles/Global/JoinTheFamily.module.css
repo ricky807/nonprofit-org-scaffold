@@ -58,17 +58,17 @@
 
 .formInputContainer > *,
 .submitButton {
-	color: var(--main-dark-purple);
-	outline: none;
 	border: none;
 	border-radius: 5px;
+	color: var(--main-dark-purple);
 	margin: 0.3rem;
+	outline: none;
 }
 .submitButton {
 	background-color: var(--main-gold);
-	padding: 0.7rem 5rem;
 	font-size: 1.3rem;
 	margin-bottom: 2rem;
+	padding: 0.7rem 5rem;
 }
 .submitButton:hover {
 	background-color: var(--main-light-purple);
