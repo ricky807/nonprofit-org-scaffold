@@ -74,7 +74,7 @@
 	background-color: var(--main-light-purple);
 	color: var(--main-gold);
 	outline: 2px solid var(--main-gold);
-	outline-offset: -1px;
+	transition: all 0.1s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
