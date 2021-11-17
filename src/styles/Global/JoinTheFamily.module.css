@@ -15,9 +15,9 @@
 }
 
 .sectionTitle {
+	align-items: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	margin-bottom: 1rem;
 }
 
@@ -26,32 +26,33 @@
 }
 
 .p {
-	text-align: center;
 	font-size: 1.3rem;
-	width: 90%;
 	margin: 0 auto 3rem;
+	text-align: center;
+	width: 90%;
 }
 
 .form {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
 .formInputContainer {
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	margin-bottom: 1rem;
 }
 .formInputContainer > * {
+	background-color: var(--main-lightgrey);
 	padding: 0.5rem 1rem;
 	width: 20rem;
-	background-color: var(--main-lightgrey);
 }
 .formInputContainer > *::placeholder,
-.formInputContainer > *::placeholder {
+.formInputContainer > *:-ms-input-placeholder,
+.formInputContainer > *::-ms-input-placeholder {
 	color: var(--main-dark-purple);
 }
 

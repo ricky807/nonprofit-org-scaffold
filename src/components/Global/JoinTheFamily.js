@@ -16,7 +16,7 @@ export default function JoinTheFamily() {
 
 	const handleSubmit = e => {
 		e.preventDefault();
-		console.log(formInfo);
+		// TODO: send form info & request to backend
 		alert(
 			formInfo.firstName + ", your information has been sent to the FP team."
 		);
