@@ -1,0 +1,33 @@
+@import "../vars.css";
+
+@import "../vars.css";
+
+.sectionContainer {
+	align-items: center;
+	background-color: var(--main-light-purple);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.container {
+	color: white;
+	padding: 2rem 0;
+}
+
+.sectionTitle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6rem;
+	margin-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+	font-size: 3rem;
+}
+
+.p {
+	text-align: center;
+}
