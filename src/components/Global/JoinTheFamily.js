@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 import * as styles from "../../styles/Global/JoinTheFamily.module.css";
 import star from "../../images/FP-star-gold.png";
 
 export default function JoinTheFamily() {
+	const [formInfo, setFormInfo] = useState({
+		firstName: "",
+		lastName: "",
+		email: "",
+	});
+
+	const handleChange = e => {
+		setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = e => {
+		e.preventDefault();
+		console.log(formInfo);
+		alert(
+			formInfo.firstName + ", your information has been sent to the FP team."
+		);
+		setFormInfo({
+			firstName: "",
+			lastName: "",
+			email: "",
+		});
+	};
+
 	return (
 		<div className={styles.sectionContainer}>
 			<div className={styles.container}>
@@ -16,11 +39,35 @@ export default function JoinTheFamily() {
 					<br />
 					Be the first to hear success stories, ways to get involved and more.
 				</p>
-				<form className={styles.form}>
-					<input type="firstname" placeholder="First Name" />
-					<input type="lastname" placeholder="Last Name" />
-					<input type="email" placeholder="Email" />
-					<button>Submit</button>
+
+				<form className={styles.form} onSubmit={handleSubmit}>
+					<div className={styles.formInputContainer}>
+						<input
+							name="firstName"
+							type="text"
+							value={formInfo.firstName}
+							onChange={handleChange}
+							placeholder="First Name"
+							required
+						/>
+						<input
+							name="lastName"
+							type="text"
+							value={formInfo.lastName}
+							onChange={handleChange}
+							placeholder="Last Name"
+							required
+						/>
+						<input
+							name="email"
+							type="email"
+							value={formInfo.email}
+							onChange={handleChange}
+							placeholder="Email"
+							required
+						/>
+					</div>
+					<button className={styles.submitButton}>Submit</button>
 				</form>
 			</div>
 		</div>
