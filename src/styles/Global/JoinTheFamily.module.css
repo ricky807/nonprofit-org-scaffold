@@ -1,7 +1,5 @@
 @import "../vars.css";
 
-@import "../vars.css";
-
 .sectionContainer {
 	align-items: center;
 	background-color: var(--main-light-purple);
@@ -12,7 +10,7 @@
 }
 
 .container {
-	color: white;
+	color: var(--main-lightgrey);
 	padding: 2rem 0;
 }
 
@@ -20,7 +18,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 6rem;
 	margin-bottom: 1rem;
 }
 
@@ -30,6 +27,9 @@
 
 .p {
 	text-align: center;
+	font-size: 1.3rem;
+	width: 90%;
+	margin: 0 auto 3rem;
 }
 
 .form {
@@ -48,7 +48,13 @@
 .formInputContainer > * {
 	padding: 0.5rem 1rem;
 	width: 20rem;
+	background-color: var(--main-lightgrey);
 }
+.formInputContainer > *::placeholder,
+.formInputContainer > *::placeholder {
+	color: var(--main-dark-purple);
+}
+
 .formInputContainer > *,
 .submitButton {
 	color: var(--main-dark-purple);
@@ -59,12 +65,31 @@
 }
 .submitButton {
 	background-color: var(--main-gold);
-	padding: 0.5rem 3rem;
-	font-size: 1.5rem;
+	padding: 0.7rem 5rem;
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
 }
 .submitButton:hover {
 	background-color: var(--main-light-purple);
 	color: var(--main-gold);
 	outline: 2px solid var(--main-gold);
 	outline-offset: -1px;
+}
+
+@media screen and (max-width: 768px) {
+	.sectionTitle {
+		flex-direction: row-reverse;
+	}
+	.sectionTitle h2 {
+		font-size: 3rem;
+	}
+	.p {
+		font-size: 1rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.sectionTitle h2 {
+		font-size: 2rem;
+	}
 }
