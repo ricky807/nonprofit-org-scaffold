@@ -1,0 +1,23 @@
+.socials {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	left: 1%;
+	position: sticky;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 5rem;
+	color: var(--main-hap-blue);
+	z-index: 10;
+}
+
+.socials > * {
+	height: 2rem;
+	width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+	.socials {
+		display: none;
+	}
+}
