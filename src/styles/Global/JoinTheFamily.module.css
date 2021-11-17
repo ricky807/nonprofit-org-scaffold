@@ -50,9 +50,7 @@
 	padding: 0.5rem 1rem;
 	width: 20rem;
 }
-.formInputContainer > *::placeholder,
-.formInputContainer > *:-ms-input-placeholder,
-.formInputContainer > *::-ms-input-placeholder {
+.formInputContainer > *::placeholder {
 	color: var(--main-dark-purple);
 }
 
