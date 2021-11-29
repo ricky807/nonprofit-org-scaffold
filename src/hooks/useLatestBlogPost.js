@@ -9,6 +9,7 @@ export const useLatestBlogPost = () => {
             title
             excerpt
             uri
+            slug
           }
         }
       }
