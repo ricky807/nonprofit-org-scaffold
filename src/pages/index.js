@@ -19,6 +19,8 @@ import Icon from "../images/haplogoonly.webp";
 import OurStory from "../images/home/OurStory.webp";
 import ParallaxBackground from "../images/home/impact.webp";
 import WhyWeExist from "../images/home/WhyWeExist.webp";
+import LatestBlogPost from "../components/Global/LatestBlogPost";
+import SocialLinks from "../components/Layout/components/SocialLinks";
 
 const IndexPage = () => {
 	return (
@@ -128,34 +130,34 @@ const IndexPage = () => {
 };
 
 const Circle = ({ image, title }) => {
-	return (
-		<div
-			className={`${styles.circle}`}
-			style={{
-				background: `url(${image})`,
-				backgroundRepeat: "no-repeat",
-				backgroundPosition: "center",
-				backgroundSize: "cover",
-			}}
-		>
-			<div className={styles.circleContent}>
-				<h3>{title}</h3>
-				<a>Learn more</a>
-			</div>
-		</div>
-	);
+  return (
+    <div
+      className={`${styles.circle}`}
+      style={{
+        background: `url(${image})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className={styles.circleContent}>
+        <h3>{title}</h3>
+        <a>Learn more</a>
+      </div>
+    </div>
+  );
 };
 
 const Analytic = ({ statistic, description, children }) => {
-	return (
-		<div className={styles.analytic}>
-			<div className={styles.analyticCircle}>
-				<div className={styles.analyticIcon}>{children}</div>
-				<h2>{statistic}</h2>
-			</div>
-			<p>{description}</p>
-		</div>
-	);
+  return (
+    <div className={styles.analytic}>
+      <div className={styles.analyticCircle}>
+        <div className={styles.analyticIcon}>{children}</div>
+        <h2>{statistic}</h2>
+      </div>
+      <p>{description}</p>
+    </div>
+  );
 };
 
 export default IndexPage;

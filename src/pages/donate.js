@@ -27,6 +27,9 @@ export default function Donate() {
           </strong>
         </p>
       </section>
+
+      <a href="https://s3-us-west-2.amazonaws.com/bloomerang-public-cdn/familypromisespokane/.widget-js/18868224.js"></a>
+
     </div>
   );
 }

@@ -101,8 +101,6 @@ export default function Volunteer() {
           src="https://www.youtube.com/watch?v=t00OrliSlW8&t=1s"
         ></iframe>
       </div>
-
-      <h1>Volunteer</h1>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Index({ children }) {
 	return (
 		<>
 			<Navbar />
-			<SocialLinks />
+			{/* <SocialLinks /> */}
 			<main>{children}</main>
 			<Footer />
 		</>
