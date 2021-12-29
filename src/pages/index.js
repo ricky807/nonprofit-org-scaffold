@@ -20,10 +20,12 @@ import OurStory from "../images/home/OurStory.webp";
 import ParallaxBackground from "../images/home/impact.webp";
 import WhyWeExist from "../images/home/WhyWeExist.webp";
 import LatestBlogPost from "../components/Global/LatestBlogPost";
+import SocialLinks from "../components/Layout/components/SocialLinks";
 
 const IndexPage = () => {
   return (
     <main className={styles.container}>
+      <SocialLinks />
       <HeaderCarousel />
       <section className={styles.sectionA}>
         <h1>We are Family Promise of Spokane. </h1>
