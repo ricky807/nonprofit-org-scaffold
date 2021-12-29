@@ -55,7 +55,6 @@ export default function Footer() {
 		<div>
 			<HelpShareThePromise />
 			<JoinTheFamily />
-			<h1>Footer</h1>
 			<footer>
 				<div className={styles.container}>
 					<section className={styles.linksContainer}>

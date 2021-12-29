@@ -2,7 +2,7 @@ import React from "react";
 
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
-import * as styles from "../../../styles/Global/SideSocials.module.css";
+import * as styles from "../../../styles/Global/sideSocials.module.css";
 
 import { FACEBOOK, INSTAGRAM, YOUTUBE } from "../../../utils/data/socials";
 
