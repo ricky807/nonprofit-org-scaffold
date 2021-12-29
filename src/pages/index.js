@@ -120,7 +120,7 @@ const IndexPage = () => {
 						the lives of our families by making a donation or by becoming a
 						volunteer.
 					</p>
-					<Button>Learn more2</Button>
+					<Button>Learn more</Button>
 				</div>
 			</section>
 		</main>
