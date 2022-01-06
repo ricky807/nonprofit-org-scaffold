@@ -21,6 +21,9 @@ const translateColors = (color) => {
     case "blue":
       return { backgroundColor: "#0063be", color: "white" };
 
+    case "gold":
+      return { backgroundColor: "#fec357", color: "black" };
+
     default:
       return { backgroundColor: "#0063be", color: "white" };
   }

@@ -14,7 +14,7 @@ export default function DonateOrVolunteer() {
           the lives of our families by making a donation or by becoming a
           volunteer.
         </p>
-        <Button>Learn more</Button>
+        <Button color="gold">Learn more</Button>
       </div>
     </section>
   );

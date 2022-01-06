@@ -21,6 +21,7 @@ import ParallaxBackground from "../images/home/impact.webp";
 import WhyWeExist from "../images/home/WhyWeExist.webp";
 import LatestBlogPost from "../components/Global/LatestBlogPost";
 import SocialLinks from "../components/Layout/components/SocialLinks";
+import DonateOrVolunteer from "../components/Global/DonateOrVolunteer";
 
 const IndexPage = () => {
   return (
@@ -77,7 +78,7 @@ const IndexPage = () => {
             <MdPeople fontSize={"2.5rem"} />
           </Analytic>
         </div>
-        <Button>Learn more</Button>
+        <Button color="gold">Learn more</Button>
       </section>
 
       <section className={styles.sectionD}>
@@ -102,17 +103,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className={styles.sectionE}>
-        <div className={styles.sectionEContent}>
-          <h1>Donate or Volunteer</h1>
-          <p>
-            The problem of homelessness is complex. You can make a difference in
-            the lives of our families by making a donation or by becoming a
-            volunteer.
-          </p>
-          <Button>Learn more</Button>
-        </div>
-      </section>
+      <DonateOrVolunteer />
     </main>
   );
 };

@@ -35,7 +35,7 @@ export default function Hap() {
         <img style={{ height: "auto", width: "100%" }} src={haplogo} />
       </Banner>
       <div className={styles.actionsContainer}>
-        <div className={styles.actions}>
+        <div style={{ marginTop: "2rem" }} className={styles.actions}>
           <Button>Apply for Assistance</Button>
           <Button>Register a New Housing Resource</Button>
         </div>

@@ -53,7 +53,7 @@ export default function Prevent() {
               in need with resources they qualify for. All in one, easy-to-use
               dashboard.
             </p>
-            <Button onClick={openHap}>Apply Now</Button>
+            <Button color='gold' onClick={openHap}>Apply Now</Button>
           </div>
           <img
             src={haplogoonly}
