@@ -17,6 +17,7 @@ import { GiPiggyBank } from "react-icons/gi";
 import { AiFillDollarCircle } from "react-icons/ai";
 
 import { BiHappyAlt } from "react-icons/bi";
+import Button from "../components/Global/Button";
 
 export default function Prevent() {
   const openHap = () => window.open("https://hap.solutions");
@@ -52,7 +53,7 @@ export default function Prevent() {
               in need with resources they qualify for. All in one, easy-to-use
               dashboard.
             </p>
-            <button onClick={openHap}>Apply Now</button>
+            <Button onClick={openHap}>Apply Now</Button>
           </div>
           <img
             src={haplogoonly}

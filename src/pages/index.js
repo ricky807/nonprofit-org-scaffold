@@ -48,50 +48,36 @@ const IndexPage = () => {
       <LatestBlogPost />
 
       <section>
-        <Parallax
-          bgImage={ParallaxBackground}
-          bgImageAlt="children"
-          bgImageStyle={{
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-            height: "auto",
-            width: "100%",
-          }}
-          contentClassName={styles.sectionC}
-          strength={500}
-        >
-          <div className={styles.analytics}>
-            <Analytic
-              statistic={"$2,500"}
-              description={"ends homelessness for an entire family"}
-            >
-              <FaPlusCircle fontSize={"2.5rem"} />
-            </Analytic>
+        <div className={styles.analytics}>
+          <Analytic
+            statistic={"$2,500"}
+            description={"ends homelessness for an entire family"}
+          >
+            <FaPlusCircle fontSize={"2.5rem"} />
+          </Analytic>
 
-            <Analytic
-              statistic={"1,152"}
-              description={"kids, moms and dads impacted"}
-            >
-              <FaHome fontSize={"2.5rem"} />
-            </Analytic>
+          <Analytic
+            statistic={"1,152"}
+            description={"kids, moms and dads impacted"}
+          >
+            <FaHome fontSize={"2.5rem"} />
+          </Analytic>
 
-            <Analytic
-              statistic={"89%"}
-              description={"of those served are from Spokane County"}
-            >
-              <IoLocationSharp fontSize={"2.5rem"} />
-            </Analytic>
+          <Analytic
+            statistic={"89%"}
+            description={"of those served are from Spokane County"}
+          >
+            <IoLocationSharp fontSize={"2.5rem"} />
+          </Analytic>
 
-            <Analytic
-              statistic={"894+"}
-              description={"volunteers engaged community-wide"}
-            >
-              <MdPeople fontSize={"2.5rem"} />
-            </Analytic>
-          </div>
-          <Button>Learn more</Button>
-        </Parallax>
+          <Analytic
+            statistic={"894+"}
+            description={"volunteers engaged community-wide"}
+          >
+            <MdPeople fontSize={"2.5rem"} />
+          </Analytic>
+        </div>
+        <Button>Learn more</Button>
       </section>
 
       <section className={styles.sectionD}>
