@@ -2,6 +2,7 @@ import React from "react";
 
 // components
 import HelpShareThePromise from "../../Global/HelpShareThePromise";
+import JoinTheFamily from "../../Global/JoinTheFamily";
 // styling
 import * as styles from "../../../styles/footer.module.css";
 // assets
@@ -53,6 +54,7 @@ export default function Footer() {
 	return (
 		<div>
 			<HelpShareThePromise />
+			<JoinTheFamily />
 			<footer>
 				<div className={styles.container}>
 					<section className={styles.linksContainer}>

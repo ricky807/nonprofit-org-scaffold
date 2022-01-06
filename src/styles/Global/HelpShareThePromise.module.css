@@ -1,37 +1,46 @@
 @import "../vars.css";
 
+.sectionContainer {
+	align-items: center;
+	background-color: var(--main-lightgrey);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
 .container {
-  color: var(--main-light-purple);
+	color: var(--main-light-purple);
 
-  padding-top: 2rem;
+	padding-top: 2rem;
 
-  padding-bottom: 2rem;
+	padding-bottom: 2rem;
 }
 
 .socials {
-  display: flex;
+	display: flex;
 
-  justify-content: center;
+	justify-content: center;
 
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  padding: 5px;
+	padding: 5px;
 }
 
 .socials * {
-  font-size: 4rem;
+	font-size: 4rem;
 
-  margin-right: 2rem;
+	margin-right: 2rem;
 
-  color: snow;
+	color: snow;
 
-  padding: 10px;
+	padding: 10px;
 
-  border-radius: 50%;
+	border-radius: 50%;
 
-  cursor: pointer;
+	cursor: pointer;
 
-  background-color: var(--main-light-purple);
+	background-color: var(--main-light-purple);
 
-  margin: 10px;
+	margin: 10px;
 }
