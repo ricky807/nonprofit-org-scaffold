@@ -42,6 +42,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  text-align: left;
 }
 
 .headerTitle h1 {
