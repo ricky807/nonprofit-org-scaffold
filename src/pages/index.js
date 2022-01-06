@@ -47,7 +47,7 @@ const IndexPage = () => {
 
       <LatestBlogPost />
 
-      <section>
+      <section className={styles.sectionC}>
         <div className={styles.analytics}>
           <Analytic
             statistic={"$2,500"}
