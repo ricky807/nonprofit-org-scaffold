@@ -6,6 +6,8 @@ import * as globalStyles from "../styles/Global/Global.module.css";
 
 import * as styles from "../styles/pages/Donate.module.css";
 
+import "../styles/bloomerang.css";
+
 export default function Donate() {
   useEffect(() => {
     const bloomContainer = document.getElementById("bloomerangContainer");
