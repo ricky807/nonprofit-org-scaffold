@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import bloomheader from "../images/donate/bloomheader.webp";
 
@@ -7,6 +7,36 @@ import * as globalStyles from "../styles/Global/Global.module.css";
 import * as styles from "../styles/pages/Donate.module.css";
 
 export default function Donate() {
+  useEffect(() => {
+    const bloomContainer = document.getElementById("bloomerangContainer");
+
+    const first = document.createElement("a");
+
+    const second = document.createElement("script");
+
+    const third = document.createElement("script");
+
+    first.setAttribute(
+      "href",
+      "https://s3-us-west-2.amazonaws.com/bloomerang-public-cdn/familypromisespokane/.widget-js/18868224.js"
+    );
+
+    second.setAttribute("type", "text/javascript");
+
+    second.setAttribute("id", "bloomerangForm18868224");
+
+    third.setAttribute(
+      "src",
+      "https://s3-us-west-2.amazonaws.com/bloomerang-public-cdn/familypromisespokane/.widget-js/18868224.js"
+    );
+
+    third.setAttribute("type", "text/javascript");
+
+    bloomContainer.appendChild(first);
+    bloomContainer.appendChild(second);
+    bloomContainer.appendChild(third);
+  }, []);
+
   return (
     <div className={globalStyles.genericContainer}>
       <section className={styles.section}>
@@ -28,8 +58,7 @@ export default function Donate() {
         </p>
       </section>
 
-      <a href="https://s3-us-west-2.amazonaws.com/bloomerang-public-cdn/familypromisespokane/.widget-js/18868224.js"></a>
-
+      <div id="bloomerangContainer"></div>
     </div>
   );
 }
