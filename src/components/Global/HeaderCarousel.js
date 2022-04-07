@@ -75,4 +75,5 @@ function HeaderCarousel(props) {
     </Carousel>
   );
 }
+
 export default HeaderCarousel;

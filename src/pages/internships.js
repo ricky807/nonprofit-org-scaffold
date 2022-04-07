@@ -51,13 +51,16 @@ export default function internships() {
             <h2>Where your education becomes real.</h2>
           </div>
 
-          <button
+          <Button
             style={{
               padding: "2rem 5rem",
             }}
+
+            color='gold'
+            onClick={() => window.open('https://familypromiseofspokane.typeform.com/to/LxS3cZ?typeform-source=www.familypromiseofspokane.org', '_blank')}
           >
             Apply Now
-          </button>
+          </Button>
         </div>
       </Banner>
 
@@ -163,7 +166,7 @@ export default function internships() {
       </div>
 
       <div className={globalStyles.genericContainer}>
-        <Button>Apply Now</Button>
+        <Button color={'gold'}>Apply Now</Button>
       </div>
     </div>
   );

@@ -10,18 +10,22 @@ import stacy from "../images/careers/stacy.webp";
 
 import * as styles from "../styles/pages/Careers.module.css";
 
+import BannerImg from '../images/careers/bannerimg.jpg'
+
+import { navigate } from "gatsby";
+
 export default function Careers() {
   return (
     <div>
-      <Banner textDirection="left" height={"45vh"} backgroundColor="darkpurple">
+      <Banner backgroundImage={BannerImg} textDirection="left" height={"45vh"} backgroundColor="darkpurple">
         <h1>CAREERS.</h1>
         <p>Where you invest your love, you invest your life. </p>
       </Banner>
 
       <Section backgroundColor="#fec357">
-        <div>
-          <Button>Explore Opportunities</Button>
-          <Button>Apply Now</Button>
+        <div className={styles.btns}>
+          <Button onClick={() => navigate('/careeropportunities')} color={'lightpurple'}>Explore Opportunities</Button>
+          <Button onClick={() => window.open('https://familypromiseofspokane.typeform.com/to/HYbBAq?typeform-source=www.familypromiseofspokane.org', '_blank')} color={'lightpurple'}>Apply Now</Button>
         </div>
       </Section>
 

@@ -31,7 +31,7 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
-          'http://fpspokanecms.online/graphql' ||
+          'https://fpspokanecms.com/graphql' ||
           `https://wpgatsbydemo.wpengine.com/graphql`,
       },
     },

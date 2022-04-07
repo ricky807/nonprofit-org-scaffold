@@ -10,6 +10,10 @@
   margin-bottom: 2rem;
 }
 
+.btns * {
+  margin: 20px;
+}
+
 .sectionContentB {
   display: flex;
   justify-content: center;

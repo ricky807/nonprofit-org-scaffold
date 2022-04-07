@@ -70,11 +70,18 @@ function Navigation() {
               </NavDropdown>
 
               <NavDropdown title="Events" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="/holidays">
+                {/* <NavDropdown.Item href="/holidays">
                   Holidays 2021
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/59minutes">
                   59 Minutes
+                </NavDropdown.Item> */}
+
+                <NavDropdown.Item href="/ungala">
+                  UnGala 2022
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/matchmadness">
+                  Match Madness
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/donate">DONATE</Nav.Link>

@@ -42,7 +42,7 @@ export default function needHelp() {
             </p>
           </div>
 
-          <Button>Apply on the HAP</Button>
+          <Button color='gold'>Apply on the HAP</Button>
 
           <div>
             <h2>I AM ALREADY HOMELESS. WHAT DO I DO?</h2>

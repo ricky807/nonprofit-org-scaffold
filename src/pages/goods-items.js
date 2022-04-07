@@ -22,6 +22,8 @@ import Button from "../components/Global/Button";
 
 import useWindowDimensions from "../utils/hooks/useWindowDimensions";
 
+import BannerImg from '../images/goodItems/bannerimg.jpg'
+
 export default function GoodsItems() {
   const { width } = useWindowDimensions();
 
@@ -32,6 +34,7 @@ export default function GoodsItems() {
         backgroundColor="darkblue"
         height={"30vh"}
         textDirection="left"
+        backgroundImage={BannerImg}
       >
         <h1>Goods & Items</h1>
       </Banner>
@@ -70,7 +73,7 @@ export default function GoodsItems() {
                 <h1>Welcome Home Kit</h1>
                 <p>Provide the essentials for newly housed families.</p>
               </div>
-              <Button>Learn more</Button>
+              <Button color={'gold'}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -83,7 +86,7 @@ export default function GoodsItems() {
                 <h1>Items & Furniture</h1>
                 <p>Build a stable foundation for a newly-housed family.</p>
               </div>
-              <Button>Learn more</Button>
+              <Button color={'gold'}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -96,7 +99,7 @@ export default function GoodsItems() {
                 <h1>Groceries & Supplies</h1>
                 <p>Gift our Family Promise shelters the essential supplies.</p>
               </div>
-              <Button>Learn more</Button>
+              <Button color={'gold'}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -109,7 +112,7 @@ export default function GoodsItems() {
                 <h1>Amazon Wishlist</h1>
                 <p>Make our dreams come true!</p>
               </div>
-              <Button>Learn more</Button>
+              <Button color={'gold'}>Learn more</Button>
             </div>
           </Card>
         </div>

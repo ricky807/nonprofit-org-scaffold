@@ -42,7 +42,6 @@
 .sectionAText {
   font-size: larger;
 
-  font-weight: bolder;
 
   width: 30%;
 }
@@ -56,7 +55,6 @@
 
   width: 55%;
 
-  font-weight: bolder;
 }
 
 .text * {

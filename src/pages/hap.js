@@ -40,6 +40,7 @@ export default function Hap() {
           <Button>Register a New Housing Resource</Button>
         </div>
       </div>
+      
       <TextSection>
         <div className={styles.text}>
           <p>
@@ -56,6 +57,8 @@ export default function Hap() {
           </p>
         </div>
       </TextSection>
+
+      
       <div className={globalStyles.genericContainer}>
         <div className={styles.faq}>
           <h3 className={styles.faqHeader}>

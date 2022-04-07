@@ -31,6 +31,8 @@ export default function Banner({
 
     backgroundRepeat: "no-repeat",
 
+      backgroundPosition: 'center',
+
     backgroundSize: "cover",
     color: translatedColor,
 

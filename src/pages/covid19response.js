@@ -72,7 +72,7 @@ export default function Covid19response() {
                 statement regarding COVID-19.
               </p>
               <div className={styles.cardContentButtons}>
-                <Button>Read Here</Button>
+                <Button color={'gold'}>Read Here</Button>
               </div>
             </div>
           </Card>
@@ -83,7 +83,7 @@ export default function Covid19response() {
                 Our precautions are to protect our guests, volunteers and staff.
               </p>
               <div className={styles.cardContentButtons}>
-                <Button>Read Plan Here</Button>
+                <Button color={'gold'}>Read Here</Button>
               </div>
             </div>
           </Card>
@@ -94,7 +94,7 @@ export default function Covid19response() {
                 Modified operations will be in place until further notice.
               </h1>
               <div className={styles.cardContentButtons}>
-                <Button>Ways TO Help Right Now</Button>
+                <Button color={'gold'}>Ways to Help Right Now</Button>
               </div>
             </div>
           </Card>
@@ -115,11 +115,17 @@ export default function Covid19response() {
               vulnerable child.
             </p>
             <div className={styles.cardContentButtons}>
-              <Button>Give Now</Button>
+              <Button color={'gold'}>Give Now</Button>
             </div>
           </div>
         </Card>
       </div>
+
+      <iframe
+        width="100%"
+        height={750}
+        src="https://www.youtube.com/watch?v=f8gWrAK2X9s"
+      ></iframe>
     </div>
   );
 }
