@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  min-height: 2rem;
   background-color: ${(props) => props.theme.darkpurple};
   padding: 5px;
   display: flex;
@@ -23,7 +22,6 @@ export const Menu = styled.div`
 export const MenuItem = styled.li`
   list-style-type: none;
   color: white;
-  margin: 0.5rem;
   margin-right: 1rem;
   font-size: smaller;
 
