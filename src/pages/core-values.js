@@ -1,21 +1,28 @@
 import React from "react";
+import styled from "styled-components";
 
 import Banner from "../components/Global/Banner";
 
 import { Container } from "../components/Global/Container";
 
+import { Image } from "../components/Global/Image";
+
 import values from "../images/core-values/values.png";
 
 export default function coreValues() {
   return (
-    <div>
+    <>
       <Banner backgroundColor={"lightpurple"} textDirection="left">
-        <h1 style={{ fontSize: "4rem" }}>Core Values</h1>
+        <BannerText>Core Values</BannerText>
       </Banner>
 
       <Container>
-        <img style={{ maxWidth: '100%', maxHeight: '100%', height: 'auto' }} src={values} />
+        <Image src={values} />
       </Container>
-    </div>
+    </>
   );
 }
+
+const BannerText = styled.h1`
+    font-size: 4rem;
+`
