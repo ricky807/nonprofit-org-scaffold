@@ -4,6 +4,8 @@ import logo from "../../../images/familypromiselogo.png";
 
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 
+
+
 function Navigation() {
   return (
     <>
@@ -27,6 +29,9 @@ function Navigation() {
               >
                 <NavDropdown.Item href="/mission">
                   MISSION & VISION
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/core-values">
+                  CORE VALUES
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/history">HISTORY</NavDropdown.Item>
                 <NavDropdown.Item href="/staff">STAFF</NavDropdown.Item>
