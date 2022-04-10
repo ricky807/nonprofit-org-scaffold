@@ -28,4 +28,14 @@ export const MenuItem = styled.li`
   font-size: smaller;
 
   cursor: pointer;
+
+  padding: 5px 10px 5px 10px;
+
+  transition: 0.2s ease-in-out;
+
+  :hover {
+      background-color: ${props => props.theme.lightpurple};
+  }
+
+
 `;
