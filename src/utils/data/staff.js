@@ -1,32 +1,34 @@
-import jader from "../../images/staff/jader.webp";
+import jader from "../../images/staff/jader.jpg";
 
-import hillary from "../../images/staff/hillary.webp";
+import dianne from "../../images/staff/dianne.jpg";
 
-import emma from "../../images/staff/emma.webp";
+import hillary from "../../images/staff/hillary.jpg";
 
-import craig from "../../images/staff/craig.webp";
+import emma from "../../images/staff/emma.jpg";
 
-import damiana from "../../images/staff/damiana.webp";
+import craig from "../../images/staff/craig.jpg";
 
-import bek from "../../images/staff/bek.webp";
+import mike from "../../images/staff/mike.jpg";
 
-import mike from "../../images/staff/mike.webp";
+import aaron from "../../images/staff/aaron.jpg";
 
-import evan from "../../images/staff/evan.webp";
+import j from "../../images/staff/j.jpg";
 
-import denise from "../../images/staff/denise.webp";
+import ray from "../../images/staff/ray.jpg";
 
-import dennis from "../../images/staff/dennis.webp";
+import betsy from "../../images/staff/betsy.jpg";
 
-import j from "../../images/staff/j.webp";
+import jeff from "../../images/staff/jeff.jpg";
 
-import serena from "../../images/staff/serena.webp";
+import chris from "../../images/staff/chris.jpg";
 
-import susan from "../../images/staff/susan.webp";
+import erin from "../../images/staff/erin.jpg";
 
-import amy from "../../images/staff/amy.webp";
+import lisa from "../../images/staff/lisa.jpg";
 
-import lynetta from "../../images/staff/lynetta.webp";
+import serena from "../../images/staff/serena.jpg";
+
+import susan from "../../images/staff/susan.jpg";
 
 const staffList = [
   {
@@ -36,9 +38,15 @@ const staffList = [
     email: "jader@familypromiseofspokane.org",
   },
   {
+    image: dianne,
+    name: "Dianne Delorme",
+    position: "Executive Assistant",
+    email: "ddelorme@familypromiseofspokane.org",
+  },
+  {
     image: hillary,
     name: "Hilary Michalowicz",
-    position: "Executive Coordinator & Grant Writer",
+    position: "Assistant Director of Strategic Initiatives & Grants Manager",
     email: "hilary@familypromiseofspokane.org",
   },
 
@@ -50,27 +58,6 @@ const staffList = [
   },
 
   {
-    image: craig,
-    name: "Craig Howard",
-    position: "Development Manager",
-    email: "choward@familypromiseofspokane.org",
-  },
-
-  {
-    image: damiana,
-    name: "Damiana Wheeler",
-    position: "Volunteer Coordinator",
-    email: "dwheeler@familypromiseofspokane.org",
-  },
-
-  {
-    image: bek,
-    name: "Bek Leech",
-    position: "Donations Coordinator",
-    email: "bleech@familypromiseofspokane.org",
-  },
-
-  {
     image: mike,
     name: "Mike Sanders",
     position: "Operations Director",
@@ -78,26 +65,24 @@ const staffList = [
   },
 
   {
-    image: evan,
-    name: "Evan Christoulis",
-    position: "Finance Manager",
-    email: "ap@familypromiseofspokane.org",
+    image: aaron,
+    name: "Aaron Trimmell",
+    position: "Marketing and Communications Manager",
+    email: "atrimmell@familypromiseofspokane.org",
   },
 
   {
-    image: denise,
-    name: "Denise Peabody",
-    position: "Office Manager",
-    email: "dpeabody@familypromiseofspokane.org",
+    image: ray,
+    name: `Hikmat "Ray" Hanna`,
+    position: "Operations Manager",
+    email: "hhanna@familypromiseofspokane.org",
   },
 
   {
-    image: dennis,
-    name: "Dennis Arsenault",
+    name: `Jeremy D"Angelo`,
     position: "Facilities Manager",
     email: "help@familypromiseofspokane.org",
   },
-
   {
     image: j,
     name: "J Wylie",
@@ -108,7 +93,7 @@ const staffList = [
   {
     image: serena,
     name: "Serena Graves",
-    position: "Emergency Shelter Program Manager",
+    position: "Family Services Program Director",
     email: "sgraves@familypromiseofspokane.org",
   },
 
@@ -120,18 +105,48 @@ const staffList = [
   },
 
   {
-    image: amy,
-    name: "Amy Robinson",
-    position: "Family Services Manager",
-    email: "arobinson@familypromiseofspokane.org",
+    image: craig,
+    name: "Craig Howard",
+    position: "Development Manager",
+    email: "choward@familypromiseofspokane.org",
   },
 
   {
-    image: lynetta,
-    name: "Lynnetta Lewis",
-    position: "Prevention Program Manager",
-    email: "advocate@familypromiseofspokane.org",
+    image: betsy,
+    name: "Betsy Kargol",
+    position: "HR Manager",
+    email: "Ekargol@familypromiseofspokane.org",
   },
+
+  {
+    image: jeff,
+    name: "Jeff Baiocco",
+    position: "Finance Manager",
+    email: "jbaiocco@familypromiseofspokane.org",
+  },
+
+  {
+    image: chris,
+    name: "Chris Harbert",
+    position: "Family Services Program Manager",
+    email: "cherbert@familypromiseofspokane.org",
+  },
+
+  {
+    image: erin,
+    name: "Erin Blessing",
+    position: "Infant House Manager",
+    email: "eblessing@familypromiseofspokane.org",
+  },
+
+  {
+    image: lisa,
+    name: "Lisa Parker",
+    position: "Cheney Shelter Manager",
+    email: "lparker@familypromiseofspokane.org",
+  },
+
+
 ];
 
 export default staffList;

@@ -9,7 +9,7 @@ export default function Person({ image, name, position, email }) {
       <div className={styles.info}>
         <h2>{name}</h2>
         <h4>{position}</h4>
-        <h5>{email}</h5>
+        <a style={{color: 'black', textDecoration: 'none'}} href={`mailto:${email}`}>{email}</a>
       </div>
     </div>
   );

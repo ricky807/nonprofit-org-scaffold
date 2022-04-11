@@ -6,7 +6,7 @@ import jay from "../../images/board/jay.webp";
 
 import nick from "../../images/board/nick.webp";
 
-import kelly from "../../images/board/kelly.gif";
+import kelly from "../../images/board/kelly.jpg";
 
 import paul from "../../images/board/paul.webp";
 
@@ -19,6 +19,12 @@ import nicole from "../../images/board/nicole.webp";
 import danetta from "../../images/board/danetta.gif";
 
 import james from "../../images/board/james.webp";
+
+import dg from "../../images/board/dg.jpg";
+
+import michelle from "../../images/board/michelle.jpg";
+
+import pj from "../../images/board/pj.jpg";
 
 const boardList = [
   {
@@ -40,9 +46,9 @@ const boardList = [
   },
 
   {
-    image: nick,
-    name: "Nick Dietzen",
-    position: "Member",
+    image: nicole,
+    name: "Nicole Wittwer",
+    position: "Board Secretary",
   },
 
   {
@@ -62,22 +68,20 @@ const boardList = [
     name: "Marianne Sfeir",
     position: "HR Committee Chair",
   },
-
   {
     image: cindy,
     name: "Cindy Wendle",
     position: "Board Development Committee Chair",
   },
-
   {
-    image: nicole,
-    name: "Nicole Wittwer",
+    image: nick,
+    name: "Nick Dietzen",
     position: "Member",
   },
 
   {
-    image: danetta,
-    name: 'Danetta "Dg" Garcia',
+    image: dg,
+    name: 'Dg Garcia',
     position: "Member",
   },
   {
@@ -85,6 +89,20 @@ const boardList = [
     name: "James Krecji",
     position: "Member",
   },
+
+  {
+    image: michelle,
+    name: "Michelle Tyler",
+    position: "Member",
+  },
+
+  {
+    image: pj,
+    name: "PJ Grabicki",
+    position: "Member",
+  },
+
+
 ];
 
 export default boardList;
