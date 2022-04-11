@@ -19,7 +19,7 @@ function Navigation() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="justify-content-end"
-              style={{ maxHeight: "100px", width: "100%" }}
+              style={{width: "100%" }}
               navbarScroll
             >
               <NavDropdown
