@@ -5,7 +5,6 @@
   width: 60%;
 
   color: var(--main-hap-blue);
-  font-weight: bolder;
 }
 
 .infoNight {
@@ -21,7 +20,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .infoNightText * {

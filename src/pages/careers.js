@@ -10,22 +10,42 @@ import stacy from "../images/careers/stacy.webp";
 
 import * as styles from "../styles/pages/Careers.module.css";
 
-import BannerImg from '../images/careers/bannerimg.jpg'
+import BannerImg from "../images/careers/bannerimg.jpg";
 
 import { navigate } from "gatsby";
 
 export default function Careers() {
   return (
     <div>
-      <Banner backgroundImage={BannerImg} textDirection="left" height={"45vh"} backgroundColor="darkpurple">
+      <Banner
+        backgroundImage={BannerImg}
+        textDirection="left"
+        height={"45vh"}
+        backgroundColor="darkpurple"
+      >
         <h1>CAREERS.</h1>
         <p>Where you invest your love, you invest your life. </p>
       </Banner>
 
       <Section backgroundColor="#fec357">
         <div className={styles.btns}>
-          <Button onClick={() => navigate('/careeropportunities')} color={'lightpurple'}>Explore Opportunities</Button>
-          <Button onClick={() => window.open('https://familypromiseofspokane.typeform.com/to/HYbBAq?typeform-source=www.familypromiseofspokane.org', '_blank')} color={'lightpurple'}>Apply Now</Button>
+          <Button
+            onClick={() => navigate("/careeropportunities")}
+            color={"lightpurple"}
+          >
+            Explore Opportunities
+          </Button>
+          <Button
+            onClick={() =>
+              window.open(
+                "https://familypromiseofspokane.typeform.com/to/HYbBAq?typeform-source=www.familypromiseofspokane.org",
+                "_blank"
+              )
+            }
+            color={"lightpurple"}
+          >
+            Apply Now
+          </Button>
         </div>
       </Section>
 
@@ -33,18 +53,16 @@ export default function Careers() {
         <div className={styles.sectionContent}>
           <h2>BE THE CHANGE YOU WANT TO SEE IN THE WORLD.</h2>
           <p>
-            <strong>
-              Jobs at Family Promise provide an exciting opportunity to make a
-              difference in the lives of families experiencing homelessness. No
-              matter if you are supporting our administrative efforts or working
-              directly with families, we need your expertise to change our
-              community.
-            </strong>
+            Jobs at Family Promise provide an exciting opportunity to make a
+            difference in the lives of families experiencing homelessness. No
+            matter if you are supporting our administrative efforts or working
+            directly with families, we need your expertise to change our
+            community.
           </p>
         </div>
       </Section>
 
-      <Section backgroundColor='lightpurple' >
+      <Section backgroundColor="lightpurple">
         <div className={styles.sectionContentB}>
           <img src={stacy} />
 

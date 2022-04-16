@@ -14,9 +14,15 @@ import cycle from "../images/whoweare/cycle.jpg";
 
 import styled from "styled-components";
 
-import { FaPlusCircle } from "react-icons/fa";
+import { FaHome, FaMoneyBill, FaPlusCircle } from "react-icons/fa";
+
+import { IoLocationSharp } from "react-icons/io5";
+
+import { MdPeople } from "react-icons/md";
 
 import Analytic, { Analytics } from "../components/Global/Analytic";
+
+import * as styles from "../styles/pages/Home.module.css";
 
 export default function whoweare() {
   return (
@@ -46,6 +52,55 @@ export default function whoweare() {
           <Button color={"gold"}>See How We Do It</Button>
         </Section>
       </Container>
+
+      <section>
+        <div
+          style={{
+            backgroundColor: "black",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            height: "auto",
+            width: "100%",
+          }}
+          className={styles.sectionC}
+        >
+          <h2 style={{ color: "white" }}>THE NEED IS GREAT</h2>
+          <div className={styles.analytics}>
+            <Analytic
+              statistic={"12,000+"}
+              description={
+                "moms, dads and kids will experience homelessness in Spokane this year"
+              }
+            >
+              <FaPlusCircle fontSize={"2.5rem"} />
+            </Analytic>
+
+            <Analytic
+              statistic={"12"}
+              description={
+                "affordable housing units available for every 100 people that needs one"
+              }
+            >
+              <FaHome fontSize={"2.5rem"} />
+            </Analytic>
+
+            <Analytic
+              statistic={"89%"}
+              description={"of those served are from Spokane County"}
+            >
+              <IoLocationSharp fontSize={"2.5rem"} />
+            </Analytic>
+
+            <Analytic
+              statistic={"66%"}
+              description={"of income needed to rent a 3-bedroom home"}
+            >
+              <FaMoneyBill fontSize={"2.5rem"} />
+            </Analytic>
+          </div>
+        </div>
+      </section>
 
       <Container>
         <Section>

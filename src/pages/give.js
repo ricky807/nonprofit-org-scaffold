@@ -24,6 +24,9 @@ import useWindowDimensions from "../utils/hooks/useWindowDimensions";
 
 import { navigate } from "gatsby";
 
+import DonateOrVolunteer from "../components/Global/DonateOrVolunteer";
+import Donate from "../components/Global/Donate";
+
 export default function Give() {
   const { width } = useWindowDimensions();
 
@@ -134,6 +137,7 @@ export default function Give() {
           </Cards>
         </Section>
       </Container>
+      <Donate />
     </>
   );
 }

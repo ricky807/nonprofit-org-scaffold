@@ -23,9 +23,9 @@ export default function contact() {
 
       <section className={styles.contact}>
         <div className={styles.contactInfo}>
-          <h2>Family Promise Main Office</h2>
+          <h2>Family Promise Administrative Offices</h2>
           <p>
-            904 E. Hartson Ave <br /> Spokane, WA 99202
+            2322 E. Sprague Ave <br /> Spokane, WA 99202
           </p>
           <p>
             509-747-5487 <br /> Fax: 509-747-5537

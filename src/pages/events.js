@@ -8,6 +8,10 @@ import Button from "../components/Global/Button";
 
 import * as styles from "../styles/pages/Events.module.css";
 
+import people from "../images/events/people.png";
+
+import { navigate } from "gatsby";
+
 export default function Events() {
   return (
     <div>
@@ -32,15 +36,13 @@ export default function Events() {
       </Section>
 
       <div className={styles.infoNight}>
-        <img
-          src={
-            "https://static.wixstatic.com/media/9a9c4e_8a75b8ee96014b07b6f667612db866f2~mv2.jpg/v1/fill/w_954,h_465,al_c,q_85,usm_0.66_1.00_0.01/9a9c4e_8a75b8ee96014b07b6f667612db866f2~mv2.webp"
-          }
-        />
+        <img src={people} />
 
         <div className={styles.infoNightText}>
-          <h2>Family Promise Info Night</h2>
-          <h3>Third Wednesday of Every Month 6pm - 7pm | Virtual Event</h3>
+          <h2>59 Minutes with Family Promise</h2>
+          <h3>
+            October 28, 2021 <br /> 7:00PM - 7:59PM | Virtual Event
+          </h3>
           <p>
             You're invited to learn more about Family Promise of Spokane and our
             mission to equip families and communities to end the cycle of
@@ -49,17 +51,18 @@ export default function Events() {
             homelessness.
           </p>
           <div>
-            <Button>Register Now</Button>
+            <Button onClick={() => navigate("/59minutes")} color={"gold"}>
+              Register Now
+            </Button>
           </div>
         </div>
-
       </div>
-        <Section>
-          <div className={styles.getInvolved}>
-            <h2>You can always get involved at Family Promise.</h2>
-            <Button>Learn More</Button>
-          </div>
-        </Section>
+      <Section>
+        <div className={styles.getInvolved}>
+          <h2>You can always get involved at Family Promise.</h2>
+          <Button onClick={() => navigate('/give')} color={"gold"}>Learn More</Button>
+        </div>
+      </Section>
     </div>
   );
 }

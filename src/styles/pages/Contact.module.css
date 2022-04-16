@@ -1,7 +1,9 @@
 @import "../vars.css";
 
 .contactContainer {
-  font-weight: bolder;
+  /* font-weight: bolder; */
+
+  color: var(--main-lightpurple);
 }
 
 .contact {
