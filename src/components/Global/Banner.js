@@ -27,7 +27,7 @@ export default function Banner({
   let stylesWithImage = {
     backgroundImage: `${generateGradiant(
       backgroundColor
-    )}, url(${backgroundImage})`,
+    )} url(${backgroundImage})`,
 
     backgroundRepeat: "no-repeat",
 
@@ -56,16 +56,19 @@ export default function Banner({
 const generateGradiant = (color) => {
   switch (color) {
     case "darkblue":
-      return "linear-gradient(to right bottom, rgba(0, 68, 119, 0.4),  rgba(0, 68, 119, 0.4))";
+      return "linear-gradient(to right bottom, rgba(0, 68, 119, 0.4),  rgba(0, 68, 119, 0.4)),";
     case "lightblue":
-      return "linear-gradient(to right bottom, rgba(0, 99, 190, 0.164),  rgba(0, 99, 190, 0.164))";
+      return "linear-gradient(to right bottom, rgba(0, 99, 190, 0.164),  rgba(0, 99, 190, 0.164)),";
     case "darkpurple":
-      return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.8),  rgba(71, 45, 91, 0.8))";
+      return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.8),  rgba(71, 45, 91, 0.8)),";
     case 'white':
-      return "linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6))";
+      return "linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)),";
 
     case "lightpurple":
-      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.8),  rgba(141, 73, 130, 0.8))";
+      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.8),  rgba(141, 73, 130, 0.8)),";
+    
+    default:
+      return ''
   }
 };
 

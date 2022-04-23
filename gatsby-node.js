@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     if (numberOfPosts > 0 || category.node.name !== "uncategorized") {
       Array.from({ length: numPages }).forEach((_, i) => {
         createPage({
-          path: "/archive",
+          path: "/stories",
           component: archiveTemplate,
           context: {
             limit: postsPerPage,

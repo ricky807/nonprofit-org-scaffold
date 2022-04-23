@@ -1,55 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-import impact from "../../images/home/impact.webp";
-import headerBackgroundImage from "../../images/hapbackgroundimage.webp";
-import presents from "../../images/home/presents.jpg";
-import snow from "../../images/home/snow.gif";
+import { useSliderQuery } from "../../hooks/useSliderQuery";
 
 // styles
 import * as styles from "../../styles/pages/Home.module.css";
 
+import styled from "styled-components";
+
 import Button from "../../components/Global/Button";
 import Icon from "../../images/haplogoonly.webp";
 
-const data = [
-  {
-    image: headerBackgroundImage,
-    caption: "Need rental assistance?",
-    description: "Family Promise is here to help",
-    icon: Icon,
-    buttonText: "Apply Now",
-  },
-  {
-    image: presents,
-    caption: "Be the Hero for a Child like Sophia.",
-    description: "Give your year-end gift today.",
-    buttonText: "Donate Now",
-  },
-  {
-    image: snow,
-    caption: "Give Hope Over the Holidays",
-    description: "Shop wishlists, sponsor families and volunteer.",
-    buttonText: "Learn More",
-  },
-];
-
 function HeaderCarousel(props) {
   const [index, setIndex] = useState(0);
+
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
 
+  const slides = useSliderQuery();
+
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {data.map((slide, i) => {
+    <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>
+      {slides.map((slide, i) => {
         return (
           <Carousel.Item>
-            <header className={styles.header}>
+            <header>
               <img
                 className={styles.headerImg}
                 style={{
-                  backgroundImage: `linear-gradient(to right bottom, rgba(255, 255, 255, 0.712), rgba(255, 255, 255, 0.767) ), url(${slide.image})`,
+                  backgroundImage: `${generateGradiant(slide.overlay)} url(${
+                    slide.background.sourceUrl
+                  })`,
                 }}
                 // this is a blank gif image that allows the image and gradient in the 'style'
                 src={styles.image}
@@ -57,13 +39,13 @@ function HeaderCarousel(props) {
               <div className={styles.header}>
                 <Carousel.Caption>
                   <div className={styles.headerContent}>
-                    {slide.icon && <img src={slide.icon} />}
+                    {/* {slide.icon && <img src={slide.icon} />} */}
                     <div className={styles.headerTitle}>
-                      <h1>{slide.caption}</h1>
-                      <h1>{slide.description}</h1>
-                      {slide.buttonText && (
-                        <Button color="blue">{slide.buttonText}</Button>
-                      )}
+                      <h1>{slide.heading}</h1>
+                      <p>{slide.subheading}</p>
+                      <Buttons>
+                        <RenderButtons btns={slide.buttons} />
+                      </Buttons>
                     </div>
                   </div>
                 </Carousel.Caption>
@@ -75,5 +57,37 @@ function HeaderCarousel(props) {
     </Carousel>
   );
 }
+
+const Buttons = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+const RenderButtons = ({ btns }) => {
+  return btns.map((btn) => (
+    <Button color={btn.color} onClick={() => window.open(btn.redirecturl)}>
+      {btn.text}
+    </Button>
+  ));
+};
+
+const generateGradiant = (color) => {
+  switch (color) {
+    case "blue":
+      return "linear-gradient(to right bottom, rgba(0, 68, 119, 0.4),  rgba(0, 68, 119, 0.4)),";
+
+    case "white":
+      return "linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)),";
+
+    case "purple":
+      return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.8),  rgba(141, 73, 130, 0.8)),";
+    default:
+      return "";
+  }
+};
 
 export default HeaderCarousel;
