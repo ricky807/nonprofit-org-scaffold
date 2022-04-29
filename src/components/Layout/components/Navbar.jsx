@@ -42,7 +42,7 @@ function Navigation() {
                 <NavDropdown.Item href="/communitypartners">
                   COMMUNITY PARTNERS
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/archive">STORIES</NavDropdown.Item>
+                <NavDropdown.Item href="/stories">STORIES</NavDropdown.Item>
               </NavDropdown>
 
               <NavDropdown title="What We Do" id="navbarScrollingDropdown">

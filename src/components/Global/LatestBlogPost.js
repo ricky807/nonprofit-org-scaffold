@@ -21,7 +21,7 @@ export default function LatestBlogPost() {
         <h1>Latest Blog Post</h1>
         <h2>{post.title}</h2>
         <p>{parse(post.excerpt)}</p>
-        <Link to={`/archive`}>Read more</Link>
+        <Link to={`/stories`}>Read more</Link>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function TopNavigation() {
         <MenuItem onClick={() => navigate("/guestPortal")}>
           Guest Portal
         </MenuItem>
-        <MenuItem onClick={() => navigate("/archive")}>Blog</MenuItem>
+        <MenuItem onClick={() => navigate("/stories")}>Blog</MenuItem>
       </Menu>
       <Menu>
         <MenuItem onClick={() => navigate("/contact")}>Contact Us</MenuItem>
