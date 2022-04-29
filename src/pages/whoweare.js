@@ -23,6 +23,7 @@ import { MdPeople } from "react-icons/md";
 import Analytic, { Analytics } from "../components/Global/Analytic";
 
 import * as styles from "../styles/pages/Home.module.css";
+import { navigate } from "gatsby";
 
 export default function whoweare() {
   return (
@@ -49,17 +50,14 @@ export default function whoweare() {
             families with those in their own neighborhood, increasing support
             networks and re-enforcing the skills needed to maintain housing.
           </p>
-          <Button color={"gold"}>See How We Do It</Button>
+          <Button color={"gold"} onClick={() => navigate('/whatwedo')}>See How We Do It</Button>
         </Section>
       </Container>
 
       <section>
         <div
           style={{
-            backgroundColor: "black",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+            backgroundColor: "#472d5b",
             height: "auto",
             width: "100%",
           }}
@@ -111,7 +109,7 @@ export default function whoweare() {
             program for homeless families in Eastern Washington.
           </p>
 
-          <Button color={"gold"}>Read More</Button>
+          <Button color={"gold"} onClick={() => navigate('/history')}>Read More</Button>
         </Section>
       </Container>
 
@@ -131,7 +129,7 @@ export default function whoweare() {
               families from becoming homeless, provide for families experiencing
               homelessness and prepare families for life beyond homelessness.
             </p>
-            <Button color="gold">Get Involved</Button>
+            <Button color="gold" onClick={() => navigate('/')}>Get Involved</Button>
           </div>
         </VideoSection>
       </Container>

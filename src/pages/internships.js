@@ -166,7 +166,7 @@ export default function internships() {
       </div>
 
       <div className={globalStyles.genericContainer}>
-        <Button color={'gold'}>Apply Now</Button>
+        <Button onClick={() => window.open('https://familypromiseofspokane.typeform.com/to/LxS3cZ?typeform-source=www.familypromiseofspokane.org', '_blank')} color={'gold'}>Apply Now</Button>
       </div>
     </div>
   );

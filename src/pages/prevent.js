@@ -18,6 +18,7 @@ import { AiFillDollarCircle } from "react-icons/ai";
 
 import { BiHappyAlt } from "react-icons/bi";
 import Button from "../components/Global/Button";
+import { navigate } from "gatsby";
 
 export default function Prevent() {
   const openHap = () => window.open("https://hap.solutions");
@@ -39,6 +40,8 @@ export default function Prevent() {
             style={{
               padding: "1rem 2rem",
             }}
+
+            onClick={() => navigate('/needHelp')}
 
             color='gold'
           >

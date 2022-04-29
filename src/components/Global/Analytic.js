@@ -61,6 +61,16 @@ const Wrapper = styled.div`
     flex-direction: column;
 
     padding: 2px;
+
+    @media screen and (max-width: 1200px) {
+      width: 28vw;
+      height: 28vw;
+    }
+
+    @media (max-width: 700px) {
+      width: 50vw;
+      height: 50vw;
+  }
   }
 
   .icon {
@@ -68,5 +78,3 @@ const Wrapper = styled.div`
     bottom: 20px;
   }
 `;
-
-

@@ -25,8 +25,7 @@ export default function prepare() {
 
           <Button
             style={{
-              height: "100px",
-              padding: "1rem",
+              padding: "2rem",
             }}
 
             color='gold'
@@ -83,7 +82,9 @@ export default function prepare() {
       </TextSection>
       <iframe
         width="100%"
-        height={750}
+        style={{
+          minHeight: '70vh'
+        }}
         src="https://www.youtube.com/watch?v=f8gWrAK2X9s"
       ></iframe>
     </div>

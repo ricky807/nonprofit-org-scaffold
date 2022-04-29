@@ -8,6 +8,8 @@ import * as globalStyles from "../styles/Global/Global.module.css";
 
 import * as styles from "../styles/pages/Help.module.css";
 
+import { navigate } from 'gatsby'
+
 export default function needHelp() {
   return (
     <div>
@@ -42,7 +44,7 @@ export default function needHelp() {
             </p>
           </div>
 
-          <Button color='gold'>Apply on the HAP</Button>
+          <Button color='gold' onClick={() => navigate('/hap')}>Apply on the HAP</Button>
 
           <div>
             <h2>I AM ALREADY HOMELESS. WHAT DO I DO?</h2>

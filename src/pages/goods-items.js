@@ -23,6 +23,7 @@ import Button from "../components/Global/Button";
 import useWindowDimensions from "../utils/hooks/useWindowDimensions";
 
 import BannerImg from "../images/goodItems/bannerimg.jpg";
+import { navigate } from "gatsby";
 
 export default function GoodsItems() {
   const { width } = useWindowDimensions();
@@ -73,7 +74,7 @@ export default function GoodsItems() {
                 <h1>Welcome Home Kit</h1>
                 <p>Provide the essentials for newly housed families.</p>
               </div>
-              <Button color={"gold"}>Learn more</Button>
+              <Button color={"gold"} onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/Welcome+Home+Kit+Template.pdf', '_blank')}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -86,7 +87,7 @@ export default function GoodsItems() {
                 <h1>Items & Furniture</h1>
                 <p>Build a stable foundation for a newly-housed family.</p>
               </div>
-              <Button color={"gold"}>Learn more</Button>
+              <Button color={"gold"} onClick={() => navigate('/furniture')}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -99,7 +100,7 @@ export default function GoodsItems() {
                 <h1>Groceries & Supplies</h1>
                 <p>Gift our Family Promise shelters the essential supplies.</p>
               </div>
-              <Button color={"gold"}>Learn more</Button>
+              <Button color={"gold"} onClick={() => window.open('https://docs.google.com/spreadsheets/d/1pObAoA90OfG8sPf3xf0QYvU1JsmSQXINdDNtxOA1wew/edit#gid=1038125846')}>Learn more</Button>
             </div>
           </Card>
           <Card
@@ -112,7 +113,7 @@ export default function GoodsItems() {
                 <h1>Amazon Wishlist</h1>
                 <p>Make our dreams come true!</p>
               </div>
-              <Button color={"gold"}>Learn more</Button>
+              <Button color={"gold"} onClick={() => window.open('https://www.amazon.com/hz/wishlist/ls/2JVFZ8X1M83G?ref_=wl_share', '_blank')}>Learn more</Button>
             </div>
           </Card>
         </div>

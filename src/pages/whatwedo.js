@@ -29,7 +29,6 @@ export default function Whatwedo() {
     <>
       <Banner
         backgroundImage={bannerImg}
-        backgroundColor={"darkpurple"}
         textDirection="left"
       >
         <h1>What We Do</h1>
@@ -114,9 +113,37 @@ export default function Whatwedo() {
           </Cards>
         </Section>
       </Container>
+
+      <DonationContainer>
+        <h1>Want to support Family Promise?</h1>
+        <Button onClick={() => navigate('/donate')} color='gold'>DONATE</Button>
+      </DonationContainer>
     </>
   );
 }
+
+const DonationContainer = styled.div`
+  min-height: 30vh;
+  background-color: ${props => props.theme.blue};
+
+
+  text-align: center;
+  padding: 5px;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+`
 
 const Section = styled.section`
   width: 50%;

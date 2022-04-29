@@ -19,14 +19,13 @@
 
 .cardContentButtons {
   display: flex;
-  width: 50%;
-  justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @media (max-width: 2100px) {
-  .cardContentButtons {
-    width: 60%;
-  }
+
 }
 
 @media (max-width: 1200px) {
@@ -34,13 +33,16 @@
     font-size: smaller;
   }
 
-  .cardContentButtons {
-    width: 70%;
-  }
 }
 
 @media (max-width: 900px) {
   .cardContent {
     font-size: smaller;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardContentButtons {
+    flex-direction: column;
   }
 }

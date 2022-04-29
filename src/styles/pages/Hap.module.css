@@ -36,11 +36,16 @@
 .actionsContainer {
   display: flex;
 
+  margin-top: 2rem;
+
+  padding: 10px;
+
   justify-content: center;
 
   align-items: center;
 
-  height: 15vh;
+  gap: 1rem;
+
 }
 
 .actions * {
@@ -60,6 +65,10 @@
 @media (max-width: 900px) {
   .faq {
     width: 70%;
+  }
+
+  .actionsContainer {
+    flex-direction: column;
   }
 
   .text {

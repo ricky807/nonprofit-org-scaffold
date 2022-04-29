@@ -89,7 +89,7 @@ const Partner = ({ image, logo, blurb, link }) => {
         <div className={styles.partnerInfo}>
           <img src={logo} />
           <p>{blurb}</p>
-          <Button onClick={openLink}>LEARN MORE</Button>
+          <Button color={'gold'} onClick={openLink}>LEARN MORE</Button>
         </div>
       </div>
     </div>

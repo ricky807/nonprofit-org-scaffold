@@ -1,28 +1,28 @@
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
 
-export const useSliderQuery = () => {
-  const data = useStaticQuery(graphql`
-  query MyQuery {
-    wpPage {
-      ACF_HOMEPAGE {
-        slider {
-          background {
-            sourceUrl
-          }
-          heading
-          subheading
-          overlay
-          buttons {
-            color
-            redirecturl
-            text
-          }
-        }
-      }
-    }
-  }
+// export const useSliderQuery = () => {
+//   const data = useStaticQuery(graphql`
+//   query Slider {
+//     wpPage {
+//       ACF_HOMEPAGE {
+//         slider {
+//           background {
+//             sourceUrl
+//           }
+//           heading
+//           subheading
+//           overlay
+//           buttons {
+//             color
+//             redirecturl
+//             text
+//           }
+//         }
+//       }
+//     }
+//   }
   
-  `);
+//   `);
 
-  return data['wpPage']['ACF_HOMEPAGE']['slider']
-};
+//   return data['wpPage']['ACF_HOMEPAGE']['slider']
+// };

@@ -10,6 +10,11 @@ export const Wrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
+
+  @media (max-width: 330px) {
+    font-size: smaller;
+    padding: 2px;
+  }
 `;
 
 export const Menu = styled.div`

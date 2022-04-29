@@ -19,6 +19,7 @@ import * as globalStyles from "../styles/Global/Global.module.css";
 import * as CardContainerStyles from "../styles/Containers/CardContainer.module.css";
 
 import * as styles from "../styles/pages/Covid19Response.module.css";
+import { navigate } from "gatsby";
 
 export default function Covid19response() {
   const { width } = useWindowDimensions();
@@ -72,7 +73,7 @@ export default function Covid19response() {
                 statement regarding COVID-19.
               </p>
               <div className={styles.cardContentButtons}>
-                <Button color={'gold'}>Read Here</Button>
+                <Button color={'gold'} onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/COVID+Press+Release+.pdf', '_blank')}>View</Button>
               </div>
             </div>
           </Card>
@@ -83,7 +84,7 @@ export default function Covid19response() {
                 Our precautions are to protect our guests, volunteers and staff.
               </p>
               <div className={styles.cardContentButtons}>
-                <Button color={'gold'}>Read Here</Button>
+                <Button color={'gold'} onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/COVID+Social+Distancing+Plan.pdf', '_blank')}>View</Button>
               </div>
             </div>
           </Card>
@@ -94,7 +95,7 @@ export default function Covid19response() {
                 Modified operations will be in place until further notice.
               </h1>
               <div className={styles.cardContentButtons}>
-                <Button color={'gold'}>Ways to Help Right Now</Button>
+                <Button color={'gold'} onClick={() => navigate('/give')}>Ways to Help Right Now</Button>
               </div>
             </div>
           </Card>
@@ -115,7 +116,7 @@ export default function Covid19response() {
               vulnerable child.
             </p>
             <div className={styles.cardContentButtons}>
-              <Button color={'gold'}>Give Now</Button>
+              <Button color={'gold'} onClick={() => navigate('/donate')}>Give Now</Button>
             </div>
           </div>
         </Card>

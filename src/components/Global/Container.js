@@ -5,5 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  background-color: 'purple';
+
   flex-direction: ${props => props.column ? 'column': 'row'};
 `;

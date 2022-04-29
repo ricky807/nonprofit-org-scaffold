@@ -21,12 +21,13 @@ import * as styles from "../styles/pages/Hap.module.css";
 
 import * as globalStyles from "../styles/Global/Global.module.css";
 
+import { navigate } from "gatsby";
+
 export default function Hap() {
   const { width } = useWindowDimensions();
 
   return (
     <div>
-      \{" "}
       <Banner
         height={width < 900 ? "10vh" : "30vh"}
         backgroundColor="white"
@@ -34,11 +35,11 @@ export default function Hap() {
       >
         <img style={{ height: "auto", width: "100%" }} src={haplogo} />
       </Banner>
+
+      
       <div className={styles.actionsContainer}>
-        <div className={styles.actions}>
-          <Button>Apply for Assistance</Button>
-          <Button>Register a New Housing Resource</Button>
-        </div>
+          <Button onClick={() => window.open('https://hap.solutions/landing', '_blank')}>Apply for Assistance</Button>
+          <Button onClick={() => navigate('/addtohap')}>Register a New Housing Resource</Button>
       </div>
       
       <TextSection>

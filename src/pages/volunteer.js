@@ -13,9 +13,25 @@ import person from "../images/volunteer/person.webp";
 
 import * as globalStyles from "../styles/Global/Global.module.css";
 
+import { navigate } from "gatsby";
+
+import styled from "styled-components";
+
 export default function Volunteer() {
   return (
     <div>
+      <Section>
+        <h1>UNDER CONSTRUCTION</h1>
+        <p>
+          We are so sorry to inform you that our volunteer program is currently
+          under construction. <br /> It will be back up and running at the end
+          of April. In the meantime, please consider donating.
+        </p>
+        <Button onClick={() => navigate("/donate")} color={"lightpurple"}>
+          Donate
+        </Button>
+      </Section>
+
       <Banner
         height={"40vh"}
         backgroundColor="lightpurple"
@@ -28,7 +44,7 @@ export default function Volunteer() {
           literacy class. Help a family move in to their new home.{" "}
         </p>
       </Banner>
-
+      {/* 
       <div className={styles.sectionAContainer}>
         <div className={styles.sectionAContent}>
           <img src={welcome} />
@@ -42,12 +58,12 @@ export default function Volunteer() {
             <Button>Sign Up Now</Button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.sectionB}>
         <div className={styles.actions}>
-          <Button>Apply Online Now</Button>
-          <Button>Download Print Application Here</Button>
+          <Button onClick={() => window.open('https://familypromiseofspokane.typeform.com/to/xJ0CbbvS?typeform-source=www.familypromiseofspokane.org', '_blank')} color={"lightpurple"}>Apply Online Now</Button>
+          {/* <Button>Download Print Application Here</Button> */}
         </div>
       </div>
 
@@ -93,6 +109,14 @@ export default function Volunteer() {
         </div>
       </div>
 
+      <DownloadHere>
+        <h3>
+          Looking to print a volunteer application to <br /> share with friends
+          or family?
+        </h3>
+        <Button color={"lightpurple"} onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/Volunteer+Application+Packet+(5).pdf', '_blank')}>Apply Online Now</Button>
+      </DownloadHere>
+
       <div className={globalStyles.genericContainer}>
         <iframe
           className={styles.video}
@@ -104,3 +128,36 @@ export default function Volunteer() {
     </div>
   );
 }
+
+const DownloadHere = styled.div`
+  min-height: 15vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+
+  gap: 2rem;
+  
+  background-color: ${props => props.theme.gold};
+  padding: 0.5rem;
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+
+    text-align: center;
+  }
+`;
+
+const Section = styled.div`
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: ${(props) => props.theme.color};
+
+  font-size: larger;
+`;

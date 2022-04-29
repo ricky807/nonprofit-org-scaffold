@@ -18,7 +18,7 @@ function HeaderCarousel(props) {
     setIndex(selectedIndex);
   };
 
-  const slides = useSliderQuery();
+  const slides = []
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>

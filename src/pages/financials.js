@@ -45,62 +45,63 @@ export default function Financials() {
         <div className={cardContainer.container}>
           <Card image={first} direction={calculateCardType(width)}>
             <div className={styles.cardContent}>
+            <div className={styles.cardContent}>
               <div className={styles.cardContentInner}>
                 <h2>Form 990</h2>
-                <p>Not Available Yet</p>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2020+-+990.pdf', '_blank')}>View</Button>
+              </div>
+
+              <div className={styles.cardContentInner}>
+                <h2>Audit</h2>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2020+-+audit.pdf', '_blank')}>View</Button>
               </div>
             </div>
+            </div>
           </Card>
+
           <Card image={second} direction={calculateCardType(width)}>
             <div className={styles.cardContent}>
               <div className={styles.cardContentInner}>
                 <h2>Form 990</h2>
-                <Button>Read Here</Button>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2019-financials.pdf', '_blank')}>View</Button>
               </div>
 
               <div className={styles.cardContentInner}>
                 <h2>Audit</h2>
-                <Button>Read Here</Button>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2019+-+Audit.pdf', '_blank')}>View</Button>
               </div>
             </div>
           </Card>
+
+
           <Card image={third} direction={calculateCardType(width)}>
             <div className={styles.cardContent}>
               <div className={styles.cardContentInner}>
                 <h2>Form 990</h2>
-                <Button>Read Here</Button>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2018+-+990.pdf', '_blank')}>View</Button>
               </div>
 
-              <div className={styles.cardContentInner}>
-                <h2>Audit</h2>
-                <Button>Read Here</Button>
-              </div>
             </div>
           </Card>
+
+
           <Card image={fourth} direction={calculateCardType(width)}>
             <div className={styles.cardContent}>
               <div className={styles.cardContentInner}>
                 <h2>Form 990</h2>
-                <Button>Read Here</Button>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2017+-+990.pdf', '_blank')}>View</Button>
               </div>
 
-              <div className={styles.cardContentInner}>
-                <h2>Audit</h2>
-                <Button>Read Here</Button>
-              </div>
+          
             </div>
           </Card>
           <Card image={fifth} direction={calculateCardType(width)}>
             <div className={styles.cardContent}>
               <div className={styles.cardContentInner}>
                 <h2>Form 990</h2>
-                <Button>Read Here</Button>
+                <Button onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/2016+-+990.pdf', '_blank')}>View</Button>
               </div>
 
-              <div className={styles.cardContentInner}>
-                <h2>Audit</h2>
-                <Button>Read Here</Button>
-              </div>
             </div>
           </Card>
         </div>

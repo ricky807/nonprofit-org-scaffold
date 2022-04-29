@@ -9,6 +9,7 @@ export default function Card({
   children,
   backgroundColor,
   imageWidth = "100%",
+  circle,
 }) {
   let flexDirection = directionToCss(direction);
 
@@ -20,7 +21,14 @@ export default function Card({
       style={{ ...flexDirection, backgroundColor: translatedBackgroundColor }}
     >
       {image && (
-        <img src={image} style={{ width: imageWidth, maxHeight: 320 }} />
+        <img
+          src={image}
+          style={{
+            width: imageWidth,
+            maxHeight: 320,
+            borderRadius: circle ? "50%" : "",
+          }}
+        />
       )}
       <div style={{ width: "100%" }}>{children}</div>
     </div>
