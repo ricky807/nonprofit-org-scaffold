@@ -15,6 +15,7 @@ export default function addtohap() {
     <div>
       <Banner height={'25vh'} backgroundImage={hapbackgroundimage} backgroundColor='white'>
         <BannerContent>
+          <Image src={haplogoonly} />
           <h1><strong>Register a New Housing Resource</strong></h1>
         </BannerContent>
       </Banner>
@@ -27,5 +28,10 @@ const BannerContent = styled.div`
   font-weight: 1000;
   font-size: larger;
   color: ${props => props.theme.darkblue};
+
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
 
 `
