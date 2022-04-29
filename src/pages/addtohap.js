@@ -34,4 +34,10 @@ const BannerContent = styled.div`
 
   gap: 1rem;
 
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
 `
