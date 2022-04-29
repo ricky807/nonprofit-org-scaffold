@@ -36,49 +36,52 @@ export default function prepare() {
       </Banner>
 
       <TextSection>
-        <p>
-          Workforce development. Partners in Housing. Financial capability.
-          Health and wellness. Homelessness has many causes and housing
-          stability involves many solutions, all personalized to fit the needs
-          of each family.
-        </p>
+        <div style={{padding: '5px'}}>
 
-        <p>
-          No matter what, we get to the heart of core needs. Any challenge that
-          a family faces that may deter from self-sufficiency, we are there to
-          help. We may match the strengths of local volunteers and the interests
-          of local corporations with the needs of our guests, like financial
-          literacy and mentoring. Similarly, much of what we do builds off core
-          tenets of the foundational shelter program itself, leading to efforts
-          like food assistance, furniture and clothing donation, and health and
-          wellness programs. ​
-        </p>
+          <p>
+            Workforce development. Partners in Housing. Financial capability.
+            Health and wellness. Homelessness has many causes and housing
+            stability involves many solutions, all personalized to fit the needs
+            of each family.
+          </p>
 
-        <p>
-          And, even more importantly, through the redemption of community that
-          families possess after finding housing, Family Promise of Spokane
-          creates the network for security and stability that encourages parents
-          and their children to aspire to the future every child deserves.
-        </p>
+          <p>
+            No matter what, we get to the heart of core needs. Any challenge that
+            a family faces that may deter from self-sufficiency, we are there to
+            help. We may match the strengths of local volunteers and the interests
+            of local corporations with the needs of our guests, like financial
+            literacy and mentoring. Similarly, much of what we do builds off core
+            tenets of the foundational shelter program itself, leading to efforts
+            like food assistance, furniture and clothing donation, and health and
+            wellness programs. ​
+          </p>
 
-        <h3>
-          Our goal is not simply getting families into housing; it is keeping
-          them in housing.
-        </h3>
+          <p>
+            And, even more importantly, through the redemption of community that
+            families possess after finding housing, Family Promise of Spokane
+            creates the network for security and stability that encourages parents
+            and their children to aspire to the future every child deserves.
+          </p>
 
-        <p>
-          Key to this is identifying needs specific to those in our community
-          and tapping into the diverse resources our volunteer pool and
-          partnerships provide. The result is families no longer at risk of
-          homelessness.
-        </p>
+          <h3>
+            Our goal is not simply getting families into housing; it is keeping
+            them in housing.
+          </h3>
 
-        <p>
-          And, even more importantly, through the redemption of community that
-          families possess after finding housing, Family Promise of Spokane
-          creates the network for security and stability that encourages parents
-          and their children to aspire to the future every child deserves.
-        </p>
+          <p>
+            Key to this is identifying needs specific to those in our community
+            and tapping into the diverse resources our volunteer pool and
+            partnerships provide. The result is families no longer at risk of
+            homelessness.
+          </p>
+
+          <p>
+            And, even more importantly, through the redemption of community that
+            families possess after finding housing, Family Promise of Spokane
+            creates the network for security and stability that encourages parents
+            and their children to aspire to the future every child deserves.
+          </p>
+        </div>
       </TextSection>
       <iframe
         width="100%"

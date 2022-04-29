@@ -34,14 +34,13 @@ export default function Give() {
     <>
       <Banner
         backgroundImage={bannerImg}
-        backgroundColor="lightpurple"
         height={"25rem"}
       ></Banner>
 
       <Container column>
         <Header>
           <h1>Your gift changes a child's future.</h1>
-          <Button color={"gold"}>Make a Financial Gift</Button>
+          <Button color={"gold"} onClick={() => navigate('/donate')}>Make a Financial Gift</Button>
         </Header>
       </Container>
 
