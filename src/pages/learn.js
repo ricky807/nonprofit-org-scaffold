@@ -55,7 +55,7 @@ export default function Learn() {
               </p>
               <h4>Phone: (509) - 724 - 7299</h4>
               <div className={styles.cardContentButtons}>
-                <Button onClick={() => window.open('mailto:sewart@familypromiseofspokane.org', '_blank')} color={'gold'}>Send Shawn An Email</Button>
+                <Button onClick={() => window.location.href = 'mailto:sewart@familypromiseofspokane.org'} color={'gold'}>Send Shawn An Email</Button>
               </div>
             </div>
           </Card>

@@ -32,7 +32,6 @@ export default function GoodsItems() {
     <div>
       <Banner
         color="white"
-        backgroundColor="darkblue"
         height={"30vh"}
         textDirection="left"
         backgroundImage={BannerImg}
