@@ -25,7 +25,9 @@ export default function Card({
           src={image}
           style={{
             width: imageWidth,
-            maxHeight: 320,
+            maxHeight: 450,
+            height: 'auto',
+            alignSelf: 'self-start',
             borderRadius: circle ? "50%" : "",
           }}
         />
