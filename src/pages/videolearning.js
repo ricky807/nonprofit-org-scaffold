@@ -42,6 +42,7 @@ import DonateOrVolunteer from "../components/Global/DonateOrVolunteer";
 import { navigate } from "gatsby";
 
 import styled from "styled-components";
+import Donate from "../components/Global/Donate";
 
 export default function Learn() {
   const { width } = useWindowDimensions();
@@ -356,7 +357,7 @@ export default function Learn() {
           </Card>
         </div>
       </div>
-      <DonateOrVolunteer />
+      <Donate />
     </div>
   );
 }
