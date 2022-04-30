@@ -4,6 +4,8 @@ import Banner from "../components/Global/Banner";
 
 import Section from "../components/Global/Section";
 
+import { navigate } from "gatsby";
+
 import * as globalStyles from "../styles/Global/Global.module.css";
 
 import * as styles from "../styles/pages/Provide.module.css";
@@ -21,7 +23,7 @@ export default function provide() {
             </small>
           </div>
           <div>
-            <button>
+            <button onClick={() => navigate("/needHelp")}>
               <strong>
                 Need emergency shelter? <br /> Call 509-747-5487
               </strong>
