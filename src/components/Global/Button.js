@@ -10,7 +10,6 @@ export default function Button({ children, onClick, color, style }) {
       className={styles.btn}
       style={{ ...buttonStyles, ...style }}
       onClick={onClick}
-
     >
       {children}
     </button>
@@ -19,12 +18,14 @@ export default function Button({ children, onClick, color, style }) {
 
 const translateColors = (color) => {
   switch (color) {
+    case "white":
+      return { backgroundColor: "white", color: "black" };
     case "blue":
       return { backgroundColor: "#0063be", color: "white" };
-    case 'gold':
+    case "gold":
       return { backgroundColor: "#fec357", color: "black" };
-    case 'lightpurple':
-      return { backgroundColor: '#8d4982', color: 'white' }
+    case "lightpurple":
+      return { backgroundColor: "#8d4982", color: "white" };
     default:
       return { backgroundColor: "#0063be", color: "white" };
   }

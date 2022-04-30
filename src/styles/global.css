@@ -5,6 +5,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 
 strong {
   font-weight: 900;
