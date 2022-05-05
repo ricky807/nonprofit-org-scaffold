@@ -25,6 +25,8 @@ import useWindowDimensions from "../utils/hooks/useWindowDimensions";
 
 import DonateOrVolunteer from "../components/Global/DonateOrVolunteer";
 
+import Donate from '../components/Global/Donate'
+
 import { navigate } from "gatsby";
 
 export default function Learn() {
@@ -109,7 +111,7 @@ export default function Learn() {
           </Card>
         </div>
       </div>
-      <DonateOrVolunteer />
+      <Donate />
     </div>
   );
 }

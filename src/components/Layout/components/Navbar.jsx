@@ -78,8 +78,8 @@ function Navigation() {
                 <NavDropdown.Item href="/ungala">
                   UnGala 2022
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/matchmadness">
-                  Match Madness
+                <NavDropdown.Item href="/nightwithoutabed">
+                  Night w/o A Bed
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/donate">DONATE</Nav.Link>
