@@ -18,7 +18,7 @@ function HeaderCarousel(props) {
     setIndex(selectedIndex);
   };
 
-  const slides = []
+  const slides = useSliderQuery()
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>
@@ -70,7 +70,7 @@ const Buttons = styled.div`
 const RenderButtons = ({ btns }) => {
   return btns.map((btn) => (
     <Button color={btn.color} onClick={() => window.open(btn.redirecturl)}>
-      {btn.text}
+      {btn.buttontext}
     </Button>
   ));
 };

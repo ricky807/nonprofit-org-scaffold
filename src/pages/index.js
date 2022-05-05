@@ -101,7 +101,9 @@ const IndexPage = () => {
               <MdPeople fontSize={"2.5rem"} />
             </Analytic>
           </div>
-          <Button color={'gold'} onClick={() => navigate('/whoweare')}>Learn more</Button>
+          <Button color={"gold"} onClick={() => navigate("/whoweare")}>
+            Learn more
+          </Button>
         </div>
       </section>
 
@@ -135,7 +137,7 @@ const IndexPage = () => {
             the lives of our families by making a donation or by becoming a
             volunteer.
           </p>
-          <Button color='gold'>Learn more</Button>
+          <Button color="gold">Learn more</Button>
         </div>
       </section>
     </main>
