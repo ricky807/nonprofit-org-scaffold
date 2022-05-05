@@ -3,6 +3,7 @@ import React from "react";
 import Button from "./Button";
 
 import * as styles from "../../styles/Global/Donate.module.css";
+import { navigate } from "gatsby";
 
 export default function DonateOrVolunteer() {
   return (
@@ -14,7 +15,9 @@ export default function DonateOrVolunteer() {
           the lives of our families by making a donation or by becoming a
           volunteer.
         </p>
-        <Button color={'gold'}>Learn more</Button>
+        <Button onClick={() => navigate("/")} color={"gold"}>
+          Learn more
+        </Button>
       </div>
     </section>
   );

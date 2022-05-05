@@ -21,6 +21,7 @@ import ParallaxBackground from "../images/home/impact.webp";
 import WhyWeExist from "../images/home/WhyWeExist.webp";
 import LatestBlogPost from "../components/Global/LatestBlogPost";
 import SocialLinks from "../components/Layout/components/SocialLinks";
+import { navigate } from "gatsby";
 
 const IndexPage = () => {
   return (
@@ -37,11 +38,11 @@ const IndexPage = () => {
 
       <section className={styles.sectionB}>
         <div className={styles.circles}>
-          <Circle image={WhyWeExist} title={"Why We Exist"} />
+          <Circle onClick={() => navigate('/whoweare')} image={WhyWeExist} title={"Why We Exist"}  />
 
-          <Circle image={OurStory} title={"Our Story"} />
+          <Circle onClick={() => navigate('/history')} image={OurStory} title={"Our Story"} />
 
-          <Circle image={HowYouCanHelp} title={"How You Can Help"}></Circle>
+          <Circle onClick={() => navigate('/give')} image={HowYouCanHelp} title={"How You Can Help"}></Circle>
         </div>
       </section>
 
@@ -131,9 +132,10 @@ const IndexPage = () => {
   );
 };
 
-const Circle = ({ image, title }) => {
+const Circle = ({ image, title, onClick }) => {
   return (
     <div
+      onClick={onClick}
       className={`${styles.circle}`}
       style={{
         background: `url(${image})`,

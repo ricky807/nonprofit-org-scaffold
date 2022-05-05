@@ -42,6 +42,13 @@ export default function contact() {
             509-747-5487 <br /> Fax: 509-747-5537
           </p>
           <p>509-723-4663 (HOME)</p>
+
+          <Button color={"gold"}>
+            <h3 style={{ color: "#ad5aa0" }}>Looking for Help?</h3>
+            <small style={{ color: "white" }}>
+              Go to 2002 E. Mission Avenue.
+            </small>
+          </Button>
         </div>
       </section>
 
@@ -49,7 +56,16 @@ export default function contact() {
         <h2>
           Are you a former guest <br /> appealing a decision?{" "}
         </h2>
-        <Button>Apply here</Button>
+        <Button
+          onClick={() =>
+            window.open(
+              "https://familypromiseofspokane.typeform.com/to/H7u4rYp1?typeform-source=www.familypromiseofspokane.org",
+              "_blank"
+            )
+          }
+        >
+          Apply here
+        </Button>
       </section>
 
       <DonateOrVolunteer />

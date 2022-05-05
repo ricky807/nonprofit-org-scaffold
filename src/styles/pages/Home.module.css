@@ -170,18 +170,15 @@
   border-radius: 50%;
   background: blue;
 
+  cursor: pointer;
+
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   padding: 2px;
-}
-
-.circleContent {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .analytics {
@@ -200,6 +197,8 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+
 }
 
 .analyticCircle {
@@ -238,6 +237,7 @@
   .circle {
     height: 28vw;
     width: 28vw;
+
   }
 
   .analytics {
@@ -294,11 +294,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
   }
 
   .analyticCircle {
     width: 60vw;
     height: 60vw;
+
   }
 
   .sectionD {

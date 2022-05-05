@@ -20,7 +20,7 @@ import styled from "styled-components";
 export default function Volunteer() {
   return (
     <div>
-      <Section>
+      <Section style={{padding: '5px'}}>
         <h1>UNDER CONSTRUCTION</h1>
         <p>
           We are so sorry to inform you that our volunteer program is currently
@@ -117,14 +117,14 @@ export default function Volunteer() {
         <Button color={"lightpurple"} onClick={() => window.open('https://fpspokanebucket.s3.us-west-1.amazonaws.com/Volunteer+Application+Packet+(5).pdf', '_blank')}>Apply Online Now</Button>
       </DownloadHere>
 
-      <div className={globalStyles.genericContainer}>
+      {/* <div className={globalStyles.genericContainer}>
         <iframe
           className={styles.video}
           height={400}
           width={"50%"}
           src="https://www.youtube.com/watch?v=t00OrliSlW8&t=1s"
         ></iframe>
-      </div>
+      </div> */}
     </div>
   );
 }
