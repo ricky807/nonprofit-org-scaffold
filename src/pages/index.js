@@ -38,29 +38,39 @@ const IndexPage = () => {
 
       <section className={styles.sectionB}>
         <div className={styles.circles}>
-          <Circle onClick={() => navigate('/whoweare')} image={WhyWeExist} title={"Why We Exist"}  />
+          <Circle
+            onClick={() => navigate("/whoweare")}
+            image={WhyWeExist}
+            title={"Why We Exist"}
+          />
 
-          <Circle onClick={() => navigate('/history')} image={OurStory} title={"Our Story"} />
+          <Circle
+            onClick={() => navigate("/history")}
+            image={OurStory}
+            title={"Our Story"}
+          />
 
-          <Circle onClick={() => navigate('/give')} image={HowYouCanHelp} title={"How You Can Help"}></Circle>
+          <Circle
+            onClick={() => navigate("/give")}
+            image={HowYouCanHelp}
+            title={"How You Can Help"}
+          ></Circle>
         </div>
       </section>
 
       <LatestBlogPost />
 
       <section>
-        <Parallax
-          bgImage={ParallaxBackground}
-          bgImageAlt="children"
-          bgImageStyle={{
+        <div
+          style={{
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             height: "auto",
             width: "100%",
+            backgroundImage: `url(${ParallaxBackground})`,
           }}
-          contentClassName={styles.sectionC}
-          strength={500}
+          className={styles.sectionC}
         >
           <div className={styles.analytics}>
             <Analytic
@@ -91,8 +101,8 @@ const IndexPage = () => {
               <MdPeople fontSize={"2.5rem"} />
             </Analytic>
           </div>
-          <Button>Learn more</Button>
-        </Parallax>
+          <Button color={'gold'} onClick={() => navigate('/whoweare')}>Learn more</Button>
+        </div>
       </section>
 
       <section className={styles.sectionD}>
@@ -125,7 +135,7 @@ const IndexPage = () => {
             the lives of our families by making a donation or by becoming a
             volunteer.
           </p>
-          <Button>Learn more</Button>
+          <Button color='gold'>Learn more</Button>
         </div>
       </section>
     </main>

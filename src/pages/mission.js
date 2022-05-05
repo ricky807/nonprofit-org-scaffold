@@ -8,6 +8,7 @@ import bridge from "../images/mission/bridge.webp";
 import ring from "../images/mission/ring.webp";
 
 import Banner from "../components/Global/Banner";
+import { navigate } from "gatsby";
 
 export default function mission() {
   return (
@@ -48,7 +49,7 @@ export default function mission() {
               </strong>
             </p>
 
-            <Button>Our Programs</Button>
+            <Button onClick={() => navigate("/")}>Our Programs</Button>
           </div>
         </div>
       </section>
