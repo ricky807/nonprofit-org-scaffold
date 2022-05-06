@@ -5,6 +5,8 @@ const pallete = {
   yellow: "#fec357",
   darkblue: "#0063be",
   hapblue: "#004477",
+  orange: "#f6a03b",
+  navy: '#003054'
 };
 
 export default pallete;

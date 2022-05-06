@@ -12,6 +12,10 @@ const translateColors = (color) => {
       return pallete.darkblue;
     case "lightblue":
       return pallete.lightblue;
+    case 'orange':
+      return pallete.orange
+    case 'navy':
+      return pallete.navy
     case "gold":
       return pallete.yellow;
     default:

@@ -8,9 +8,15 @@ import Action from "../components/Global/Action";
 
 import { navigate } from "gatsby";
 
+import Banner from "../components/Global/Banner";
+
 export default function StaffPortal() {
   return (
     <div>
+      <Banner height="20vh" backgroundColor={"darkblue"}>
+        <h1>Welcome to the Staff Portal.</h1>
+      </Banner>
+
       <Container>
         <Actions>
           <Action
@@ -38,6 +44,7 @@ export default function StaffPortal() {
             subheading="All things related to workplace trainings, staff documentation and time-off requests."
             btnText="Submit Request"
             color="lightblue"
+            onClick={() => navigate("/humanresources")}
           />
           <Action
             heading={"Donation Receipt Form"}
@@ -68,7 +75,7 @@ export default function StaffPortal() {
             heading={"Staff Directory"}
             subheading="This document has the phone numbers, emails, and titles of all current employees."
             btnText="Click Here"
-            color="gold"
+            color="orange"
             onClick={() =>
               window.open(
                 "https://fpspokanebucket.s3.us-west-1.amazonaws.com/Staff+Directory+(2)(1).ods",
