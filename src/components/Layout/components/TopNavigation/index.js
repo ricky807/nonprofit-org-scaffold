@@ -9,17 +9,17 @@ export default function TopNavigation() {
     <Wrapper>
       <Menu>
         <MenuItem onClick={() => navigate("/needHelp")}>Need Help?</MenuItem>
-        <MenuItem onClick={() => navigate("/guestPortal")}>
+        <MenuItem onClick={() => navigate("/guest-portal")}>
           Guest Portal
         </MenuItem>
         <MenuItem onClick={() => navigate("/stories")}>Blog</MenuItem>
       </Menu>
       <Menu>
         <MenuItem onClick={() => navigate("/contact")}>Contact Us</MenuItem>
-        <MenuItem onClick={() => navigate("/staffPortal")}>
+        <MenuItem onClick={() => navigate("/staff-portal")}>
           Staff Portal
         </MenuItem>
-        <MenuItem onClick={() => navigate("/boardPortal")}>
+        <MenuItem onClick={() => navigate("/board-portal")}>
           Board Portal
         </MenuItem>
       </Menu>
