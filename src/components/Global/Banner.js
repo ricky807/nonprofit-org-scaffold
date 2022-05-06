@@ -63,6 +63,8 @@ const generateGradiant = (color) => {
       return "linear-gradient(to right bottom, rgba(71, 45, 91, 0.8),  rgba(71, 45, 91, 0.8)),";
     case 'white':
       return "linear-gradient(to right bottom, rgba(255, 255, 255, 0.6),  rgba(255, 255, 255, 0.6)),";
+    case 'black':
+      return "linear-gradient(to right bottom, rgba(0, 0, 0, 0.4),  rgba(0, 0, 0, 0.4)),";
 
     case "lightpurple":
       return "linear-gradient(to right bottom, rgba(141, 73, 130, 0.8),  rgba(141, 73, 130, 0.8)),";
