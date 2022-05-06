@@ -12,7 +12,7 @@ import Banner from "../components/Global/Banner";
 
 export default function StaffPortal() {
   return (
-    <div>
+    <PasswordProtected title="Staff Portal" password={"WorldChanger20"}>
       <Banner height="20vh" backgroundColor={"darkblue"}>
         <h1>Welcome to the Staff Portal.</h1>
       </Banner>
@@ -85,7 +85,7 @@ export default function StaffPortal() {
           />
         </Actions>
       </Container>
-    </div>
+    </PasswordProtected>
   );
 }
 

@@ -10,7 +10,7 @@ import Button from "../components/Global/Button";
 
 export default function BoardPortal() {
   return (
-    <div>
+    <PasswordProtected tital="Board Portal" password="board2021">
       <Banner height="25vh" backgroundColor={"darkblue"}>
         <h1>Welcome to the Board Portal.</h1>
       </Banner>
@@ -33,7 +33,7 @@ export default function BoardPortal() {
           </Card>
         </Section>
       </Container>
-    </div>
+    </PasswordProtected>
   );
 }
 

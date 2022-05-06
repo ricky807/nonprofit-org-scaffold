@@ -8,7 +8,7 @@ import { navigate } from "gatsby";
 
 export default function GuestPortal() {
   return (
-    <div>
+    <PassswordProtected tital='Guest Portal' password='WorldChanger20'>
       <Banner backgroundColor={"darkblue"} height="20vh" textDirection={"left"}>
         <h1>Welcome.</h1>
       </Banner>
@@ -131,7 +131,7 @@ export default function GuestPortal() {
           </div>
         </Section>
       </Container>
-    </div>
+    </PassswordProtected>
   );
 }
 
