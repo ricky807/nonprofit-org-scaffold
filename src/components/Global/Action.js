@@ -9,17 +9,19 @@ export default function Action({
   subheading,
   btnText,
   color,
-  onClick
+  onClick,
 }) {
   const translatedColor = translateColors(color);
 
+  const buttonless = !btnText;
+
   return (
-    <Wrapper backgroundColor={translatedColor}>
-      <h2>{heading}</h2>
+    <Wrapper backgroundColor={translatedColor} buttonless={buttonless}>
+      <h2 onClick={onClick}>{heading}</h2>
 
       <p>{subheading}</p>
 
-      <Button onClick={onClick}>{btnText}</Button>
+      {btnText && <Button onClick={onClick}>{btnText}</Button>}
     </Wrapper>
   );
 }
@@ -44,4 +46,13 @@ const Wrapper = styled.div`
   padding: 3rem;
 
   text-align: center;
+
+  ${(props) =>
+    props.buttonless &&
+    `
+        h2 {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    `}
 `;
