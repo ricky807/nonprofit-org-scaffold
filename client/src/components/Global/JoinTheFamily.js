@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import * as styles from "../../styles/Global/JoinTheFamily.module.css";
 import star from "../../images/FP-star-gold.png";
 import axiosWithAuth from "../../utils/axiosWithAuth";
+import Button from "../Global/Button";
+import { Modal } from "react-bootstrap/esm";
+
+import styled from "styled-components";
 
 export default function JoinTheFamily() {
   const [formInfo, setFormInfo] = useState({
@@ -11,6 +15,13 @@ export default function JoinTheFamily() {
     email: "",
   });
 
+  const [show, setShow] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const handleChange = (e) => {
     setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
   };
@@ -18,7 +29,7 @@ export default function JoinTheFamily() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // TODO: send form info & request to backend
-
+    setLoading(true);
     try {
       let payload = {
         FirstName: formInfo.firstName,
@@ -33,10 +44,11 @@ export default function JoinTheFamily() {
       };
 
       await axiosWithAuth.post("/constituent", payload);
-
-      alert('Success!')
+      handleShow();
     } catch (error) {
       alert("Unable to subscribe, please try again later");
+    } finally {
+      setLoading(false);
     }
 
     setFormInfo({
@@ -48,6 +60,11 @@ export default function JoinTheFamily() {
 
   return (
     <div className={styles.sectionContainer}>
+      <SubscribedModal
+        show={show}
+        setShow={setShow}
+        handleClose={handleClose}
+      />
       <div className={styles.container}>
         <div className={styles.sectionTitle}>
           <h2>Join the family</h2>
@@ -86,9 +103,42 @@ export default function JoinTheFamily() {
               required
             />
           </div>
-          <button className={styles.submitButton}>Submit</button>
+          <button className={styles.submitButton}>
+            {loading ? "Submitting.." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
+  );
+}
+
+function SubscribedModal({ show, setShow, handleClose }) {
+  return (
+    <>
+      <Modal
+        style={{ color: "white" }}
+        className="my-modal"
+        show={show}
+        onHide={handleClose}
+      >
+        <Modal.Header closeButton style={{ background: "#8d4982" }}>
+          <Modal.Title>
+            You've been subscribed to the Family Promise Post!
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ background: "#8d4982" }}>
+          <video width="100%" height="auto" controls>
+            <source src="movie.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+        </Modal.Body>
+        <Modal.Footer style={{ background: "#8d4982" }}>
+          <Button color={"gold"} onClick={handleClose}>
+            Return to site
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
