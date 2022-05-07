@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import * as styles from "../../styles/Global/JoinTheFamily.module.css";
 import star from "../../images/FP-star-gold.png";
+import axiosWithAuth from "../../utils/axiosWithAuth";
 
 export default function JoinTheFamily() {
   const [formInfo, setFormInfo] = useState({
@@ -14,12 +15,30 @@ export default function JoinTheFamily() {
     setFormInfo({ ...formInfo, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // TODO: send form info & request to backend
-    alert(
-      formInfo.firstName + ", your information has been sent to the FP team."
-    );
+
+    try {
+      let payload = {
+        FirstName: formInfo.firstName,
+        LastName: formInfo.lastName,
+
+        PrimaryEmail: {
+          Value: formInfo.email,
+          Type: "Home",
+        },
+
+        EmailInterestType: "All",
+      };
+
+      await axiosWithAuth.post("/constituent", payload);
+
+      alert('Success!')
+    } catch (error) {
+      alert("Unable to subscribe, please try again later");
+    }
+
     setFormInfo({
       firstName: "",
       lastName: "",
@@ -73,4 +92,3 @@ export default function JoinTheFamily() {
     </div>
   );
 }
-

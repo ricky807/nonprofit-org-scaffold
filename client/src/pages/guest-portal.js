@@ -6,9 +6,10 @@ import styled from "styled-components";
 import Button from "../components/Global/Button";
 import { navigate } from "gatsby";
 
+
 export default function GuestPortal() {
   return (
-    <PassswordProtected tital='Guest Portal' password='WorldChanger20'>
+    <PassswordProtected title='Guest Portal' password='WorldChanger20'>
       <Banner backgroundColor={"darkblue"} height="20vh" textDirection={"left"}>
         <h1>Welcome.</h1>
       </Banner>
