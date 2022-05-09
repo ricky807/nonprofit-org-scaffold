@@ -1,0 +1,27 @@
+.socials {
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--main-hap-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  left: 1%;
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 3rem;
+  z-index: 10;
+}
+
+.socials > * {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .socials {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.container {
+  margin-top: 1rem;
+  width: 60%;
+}
+
+.container * {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
+}

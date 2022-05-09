@@ -1,0 +1,58 @@
+@import "../vars.css";
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 15rem;
+  flex-direction: column;
+  gap: 2rem;
+
+  margin-bottom: 1rem;
+
+  background-color: var(--main-lightgrey);
+}
+
+.section h1 {
+  color: var(--main-hap-blue);
+}
+
+.sectionContent {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 2rem;
+}
+
+.cardContentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  grid-gap: 1rem;
+}
+
+.cardContent {
+  color: var(--main-hap-blue);
+
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .sectionContent {
+    width: 85%;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionContent {
+    width: 95%;
+  }
+}

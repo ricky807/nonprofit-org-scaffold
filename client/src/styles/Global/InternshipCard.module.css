@@ -1,0 +1,72 @@
+@import "../vars.css";
+
+.container {
+  color: var(--main-hap-blue);
+
+  display: flex;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  padding: 1rem;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  max-width: 25rem;
+}
+
+.title {
+  color: var(--main-gold);
+
+  display: flex;
+}
+
+.data {
+  margin-bottom: 5rem;
+}
+
+.data hr {
+  border: 1px solid var(--main-gold);
+
+  margin-bottom: 1.5rem;
+}
+
+.image {
+  margin-top: 2rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.image img {
+  padding: 1rem;
+
+  height: auto;
+}
+
+.container * {
+  margin-bottom: 1rem;
+}
+
+.pdfLinkContainer {
+  display: flex;
+
+  justify-content: flex-start;
+
+  align-items: center;
+}
+
+.pdfLink {
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 17rem;
+  }
+}

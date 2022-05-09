@@ -1,0 +1,82 @@
+@import "../vars.css";
+
+.text {
+  font-size: larger;
+  width: 60%;
+
+  color: var(--main-hap-blue);
+}
+
+.infoNight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--main-light-purple);
+
+  color: white;
+}
+
+.infoNightText {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoNightText * {
+  margin-bottom: 2rem;
+}
+
+.infoNight img {
+  width: 100%;
+  height: 100%;
+}
+
+.getInvolved {
+  text-align: center;
+
+  font-size: larger;
+
+  color: var(--main-light-purple);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 5rem;
+
+  border: 5px solid var(--main-light-purple);
+
+  border-radius: 10px;
+}
+
+.getInvolved * {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .text {
+    width: 70%;
+  }
+
+  .infoNight {
+    grid-template-columns: unset;
+
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  .infoNight img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .text {
+    width: 85%;
+  }
+}
+
+@media (max-width: 500px) {
+    .text {
+      width: 95%;
+    }
+  }

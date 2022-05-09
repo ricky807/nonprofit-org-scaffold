@@ -1,0 +1,51 @@
+@import '../vars.css';
+
+.sectionE {
+  display: flex;
+  width: 100%;
+  min-height: 40vh;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.5rem;
+
+  padding: 1rem 0 1rem 0;
+}
+
+.sectionE p {
+  color: var(--main-hap-blue);
+}
+
+.sectionEContent {
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 50%;
+}
+
+.sectionEContent h1 {
+  font-size: 3rem;
+
+  color: var(--main-light-blue);
+}
+
+@media (max-width: 1200px) {
+  .sectionEContent {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .sectionEContent {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .sectionEContent h1 {
+    font-size: 1.6rem;
+  }
+}
