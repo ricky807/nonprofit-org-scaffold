@@ -21,7 +21,7 @@ app.post("/constituent", async (req, res) => {
 
     res.json(response.data);
   } catch (error) {
-    console.log(error);
+    res.status(400).json({ error });
   }
 });
 
