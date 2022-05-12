@@ -23,7 +23,9 @@ import LatestBlogPost from "../components/Global/LatestBlogPost";
 import SocialLinks from "../components/Layout/components/SocialLinks";
 import { navigate } from "gatsby";
 
+
 const IndexPage = () => {
+
   return (
     <main className={styles.container}>
       <HeaderCarousel />
