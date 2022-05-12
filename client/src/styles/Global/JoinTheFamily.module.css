@@ -1,0 +1,94 @@
+@import "../vars.css";
+
+.sectionContainer {
+	align-items: center;
+	background-color: var(--main-light-purple);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+.container {
+	color: var(--main-lightgrey);
+	padding: 2rem 0;
+}
+
+.sectionTitle {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+.sectionTitle h2 {
+	font-size: 3rem;
+}
+
+.p {
+	font-size: 1.3rem;
+	margin: 0 auto 3rem;
+	text-align: center;
+	width: 90%;
+}
+
+.form {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.formInputContainer {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.formInputContainer > * {
+	background-color: var(--main-lightgrey);
+	padding: 0.5rem 1rem;
+	width: 20rem;
+}
+.formInputContainer > *::placeholder {
+	color: var(--main-dark-purple);
+}
+
+.formInputContainer > *,
+.submitButton {
+	border: none;
+	border-radius: 5px;
+	color: var(--main-dark-purple);
+	margin: 0.3rem;
+	outline: none;
+}
+.submitButton {
+	background-color: var(--main-gold);
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+	padding: 0.7rem 5rem;
+}
+.submitButton:hover {
+	background-color: var(--main-light-purple);
+	color: var(--main-gold);
+	outline: 2px solid var(--main-gold);
+	transition: all 0.1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+	.sectionTitle {
+		flex-direction: row-reverse;
+	}
+	.sectionTitle h2 {
+		font-size: 3rem;
+	}
+	.p {
+		font-size: 1rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media screen and (max-width: 450px) {
+	.sectionTitle h2 {
+		font-size: 2rem;
+	}
+}

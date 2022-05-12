@@ -1,0 +1,53 @@
+@import "../vars.css";
+
+.section {
+    width: 60%;
+}
+
+.section * {
+    margin-top: 1rem;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.sectionContent {
+    display: flex;
+
+    justify-content: center;
+}
+
+.sectionTitle {
+    color: var(--main-hap-blue);
+
+    margin-bottom: 1rem;
+}
+
+.img {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+    max-height: 300px;
+
+}
+
+@media(max-width: 1400px) {
+    .section {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .section {
+        width: 95%;
+    }
+}
+
+@media(max-width: 850px) {
+    .sectionContent {
+        flex-direction: column;
+    }
+
+}
