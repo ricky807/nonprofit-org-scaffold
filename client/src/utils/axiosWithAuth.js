@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const axiosWithAuth = axios.create({
-    baseURL: 'http://localhost:1337'
+    baseURL: process.env.GATSBY_API_URI
 })
 
 export default axiosWithAuth

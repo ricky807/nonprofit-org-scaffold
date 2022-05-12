@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
@@ -32,13 +36,11 @@ module.exports = {
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
-          'http://3.230.120.77/graphql' ||
+          "http://3.230.120.77/graphql" ||
           `https://wpgatsbydemo.wpengine.com/graphql`,
       },
     },
   ],
 };
-
-
 
 // https://fpspokanecms.com/graphql
