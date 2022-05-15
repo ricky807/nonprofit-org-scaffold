@@ -1,6 +1,7 @@
 import React from "react";
 
-import logo from "../../../images/familypromiselogo.png";
+import logo from "../../../images/cornerstonePics/Cornerstone LOGO (1).png";
+
 
 import { Navbar, NavDropdown, Nav, Container } from "react-bootstrap";
 
