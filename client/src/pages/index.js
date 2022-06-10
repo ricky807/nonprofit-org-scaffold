@@ -30,11 +30,12 @@ const IndexPage = () => {
     <main className={styles.container}>
       <HeaderCarousel />
       <section className={styles.sectionA}>
-        <h1>We are Family Promise of Spokane. </h1>
+        <h1>We are Cornerstone Community Church N.W. </h1>
         <p>
-          Equipping families & communities to end the cycle of homelessness.
-          <br />
-          Because every child deserves a home.
+          Located at 4032 W. Heroy Ave. Spokane, WA 99205
+        </p>
+        <p>
+          Service Times:  Sunday 10:00AM – 1130AM
         </p>
       </section>
 
@@ -49,7 +50,7 @@ const IndexPage = () => {
           <Circle
             onClick={() => navigate("/history")}
             image={OurStory}
-            title={"Our Story"}
+            title={"Meet Pastor Dan Harris"}
           />
 
           <Circle
@@ -133,11 +134,11 @@ const IndexPage = () => {
 
       <section className={styles.sectionE}>
         <div className={styles.sectionEContent}>
-          <h1>Donate or Volunteer</h1>
+          <h1>Contact Information</h1>
           <p>
-            The problem of homelessness is complex. You can make a difference in
-            the lives of our families by making a donation or by becoming a
-            volunteer.
+            Address: 4032 W. Heroy Ave.<br />
+            Spokane, WA 99205<br />
+            Email: spokane.cornerstone@gmail.com
           </p>
           <Button color="gold">Learn more</Button>
         </div>
